@@ -24,6 +24,10 @@
 		EB2D59F922B58E9A0014669B /* location_b.json in Sources */ = {isa = PBXBuildFile; fileRef = EB2D59F822B58E9A0014669B /* location_b.json */; };
 		EB2D59FB22B58EAB0014669B /* location_c.json in Sources */ = {isa = PBXBuildFile; fileRef = EB2D59FA22B58EAB0014669B /* location_c.json */; };
 		EB2D59FF22B58FA80014669B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EB2D59FE22B58FA80014669B /* GoogleService-Info.plist */; };
+		EB2D5A0522B5A34A0014669B /* ActivityHouse.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB2D5A0422B5A34A0014669B /* ActivityHouse.storyboard */; };
+		EB2D5A0722B5A3540014669B /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB2D5A0622B5A3540014669B /* Profile.storyboard */; };
+		EB2D5A0922B5A35F0014669B /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2D5A0822B5A35F0014669B /* ProfileView.swift */; };
+		EB2D5A0B22B5A3920014669B /* ActivityTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2D5A0A22B5A3920014669B /* ActivityTableView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +52,10 @@
 		EB2D59F822B58E9A0014669B /* location_b.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = location_b.json; sourceTree = "<group>"; };
 		EB2D59FA22B58EAB0014669B /* location_c.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = location_c.json; sourceTree = "<group>"; };
 		EB2D59FE22B58FA80014669B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		EB2D5A0422B5A34A0014669B /* ActivityHouse.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ActivityHouse.storyboard; sourceTree = "<group>"; };
+		EB2D5A0622B5A3540014669B /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
+		EB2D5A0822B5A35F0014669B /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		EB2D5A0A22B5A3920014669B /* ActivityTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityTableView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +136,8 @@
 			children = (
 				EB2D59E922B58DB60014669B /* MainApp.storyboard */,
 				EB2D59EB22B58DC50014669B /* CardSwipeView.swift */,
+				EB2D5A0322B5A3330014669B /* ActivityHouse */,
+				EB2D5A0222B5A3240014669B /* Profile */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -160,6 +170,24 @@
 				EB2D59F022B58E400014669B /* SPageThree.swift */,
 			);
 			path = Pages;
+			sourceTree = "<group>";
+		};
+		EB2D5A0222B5A3240014669B /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				EB2D5A0622B5A3540014669B /* Profile.storyboard */,
+				EB2D5A0822B5A35F0014669B /* ProfileView.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		EB2D5A0322B5A3330014669B /* ActivityHouse */ = {
+			isa = PBXGroup;
+			children = (
+				EB2D5A0422B5A34A0014669B /* ActivityHouse.storyboard */,
+				EB2D5A0A22B5A3920014669B /* ActivityTableView.swift */,
+			);
+			path = ActivityHouse;
 			sourceTree = "<group>";
 		};
 		ECBD5DA68ED085FC34BB5D4C /* Frameworks */ = {
@@ -234,6 +262,8 @@
 				EB2D59EA22B58DB60014669B /* MainApp.storyboard in Resources */,
 				EB2D59BC22B539CA0014669B /* Assets.xcassets in Resources */,
 				EB2D59FF22B58FA80014669B /* GoogleService-Info.plist in Resources */,
+				EB2D5A0522B5A34A0014669B /* ActivityHouse.storyboard in Resources */,
+				EB2D5A0722B5A3540014669B /* Profile.storyboard in Resources */,
 				EB2D59BA22B539C80014669B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -316,6 +346,8 @@
 				33C3283522B553E900103D44 /* GenderSelectionView.swift in Sources */,
 				EB2D59EF22B58E2A0014669B /* PageViewController.swift in Sources */,
 				EB2D59F922B58E9A0014669B /* location_b.json in Sources */,
+				EB2D5A0B22B5A3920014669B /* ActivityTableView.swift in Sources */,
+				EB2D5A0922B5A35F0014669B /* ProfileView.swift in Sources */,
 				EB2D59FB22B58EAB0014669B /* location_c.json in Sources */,
 				EB2D59F522B58E630014669B /* SPageOne.swift in Sources */,
 				EB2D59B722B539C80014669B /* ViewController.swift in Sources */,
