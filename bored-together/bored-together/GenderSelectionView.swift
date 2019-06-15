@@ -26,6 +26,10 @@ class GenderSelectionView: UIViewController,  UIPickerViewDelegate, UIPickerView
         genderPickerData = ["Male", "Female", "Prefer not to answer"]
     }
     
+    @IBAction func GenderNextSlide(_ sender: Any) {
+        print("passing gender slide")
+        self.performSegue(withIdentifier: "GenderNextSlide" , sender: self)
+    }
     // Number of columns of data
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
     return 1
@@ -35,7 +39,7 @@ class GenderSelectionView: UIViewController,  UIPickerViewDelegate, UIPickerView
     return genderPickerData.count
     }
     
-    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> UIView {
+    func pickerView(_ pickerView: UIPickerView, viewForRow row: Int, forComponent component: Int, reusing view: UIView?) -> UIView {
         
         var label = UILabel()
         if let v = view {
