@@ -100,7 +100,7 @@ class PageViewController: UIPageViewController, UIPageViewControllerDelegate, UI
                   if let email : NSString = (result! as AnyObject).value(forKey: "email") as? NSString {
                     print("email: \(email)")
                   }
-                  print("")
+                  print("PERFORMING SEGUE")
                   self.performSegue(withIdentifier: "to_main_app", sender: self)
                 }
               })
