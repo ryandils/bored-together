@@ -7,5 +7,10 @@ target 'bored-together' do
 
   # Pods for bored-together
   pod 'Apollo'
+  pod 'Firebase/Auth'
+  pod 'FacebookCore'
+  pod 'FacebookLogin'
+  pod 'FacebookShare'
+  pod 'lottie-ios'
 
 end

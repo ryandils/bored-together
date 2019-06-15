@@ -14,6 +14,13 @@
 		EB2D59BC22B539CA0014669B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB2D59BB22B539CA0014669B /* Assets.xcassets */; };
 		EB2D59BF22B539CA0014669B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB2D59BD22B539CA0014669B /* LaunchScreen.storyboard */; };
 		EB2D59C722B540E50014669B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EB2D59C622B540E50014669B /* GoogleService-Info.plist */; };
+		EB2D59CC22B558100014669B /* SPageOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2D59CB22B558100014669B /* SPageOne.swift */; };
+		EB2D59CE22B5581B0014669B /* SPageTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2D59CD22B5581B0014669B /* SPageTwo.swift */; };
+		EB2D59D022B558230014669B /* SPageThree.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2D59CF22B558230014669B /* SPageThree.swift */; };
+		EB2D59D222B558D10014669B /* location_a.json in Resources */ = {isa = PBXBuildFile; fileRef = EB2D59D122B558D10014669B /* location_a.json */; };
+		EB2D59D422B558D70014669B /* location_b.json in Resources */ = {isa = PBXBuildFile; fileRef = EB2D59D322B558D70014669B /* location_b.json */; };
+		EB2D59D622B558DC0014669B /* location_c.json in Resources */ = {isa = PBXBuildFile; fileRef = EB2D59D522B558DC0014669B /* location_c.json */; };
+		EB2D59DA22B55B810014669B /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2D59D922B55B810014669B /* PageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +35,13 @@
 		EB2D59BE22B539CA0014669B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EB2D59C022B539CA0014669B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EB2D59C622B540E50014669B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		EB2D59CB22B558100014669B /* SPageOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPageOne.swift; sourceTree = "<group>"; };
+		EB2D59CD22B5581B0014669B /* SPageTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPageTwo.swift; sourceTree = "<group>"; };
+		EB2D59CF22B558230014669B /* SPageThree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPageThree.swift; sourceTree = "<group>"; };
+		EB2D59D122B558D10014669B /* location_a.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = location_a.json; sourceTree = "<group>"; };
+		EB2D59D322B558D70014669B /* location_b.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = location_b.json; sourceTree = "<group>"; };
+		EB2D59D522B558DC0014669B /* location_c.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = location_c.json; sourceTree = "<group>"; };
+		EB2D59D922B55B810014669B /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,7 +62,6 @@
 				28CEC85C13CFE5F620428404 /* Pods-bored-together.debug.xcconfig */,
 				38184EE1DABD9FF96C1C3334 /* Pods-bored-together.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -73,6 +86,7 @@
 		EB2D59B322B539C80014669B /* bored-together */ = {
 			isa = PBXGroup;
 			children = (
+				EB2D59CA22B557EA0014669B /* PageView */,
 				EB2D59B422B539C80014669B /* AppDelegate.swift */,
 				EB2D59B622B539C80014669B /* ViewController.swift */,
 				EB2D59B822B539C80014669B /* Main.storyboard */,
@@ -82,6 +96,21 @@
 				EB2D59C622B540E50014669B /* GoogleService-Info.plist */,
 			);
 			path = "bored-together";
+			sourceTree = "<group>";
+		};
+		EB2D59CA22B557EA0014669B /* PageView */ = {
+			isa = PBXGroup;
+			children = (
+				EB2D59D122B558D10014669B /* location_a.json */,
+				EB2D59D322B558D70014669B /* location_b.json */,
+				EB2D59D522B558DC0014669B /* location_c.json */,
+				EB2D59CB22B558100014669B /* SPageOne.swift */,
+				EB2D59CD22B5581B0014669B /* SPageTwo.swift */,
+				EB2D59CF22B558230014669B /* SPageThree.swift */,
+				EB2D59D922B55B810014669B /* PageViewController.swift */,
+			);
+			name = PageView;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		ECBD5DA68ED085FC34BB5D4C /* Frameworks */ = {
@@ -152,10 +181,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB2D59D622B558DC0014669B /* location_c.json in Resources */,
 				EB2D59BF22B539CA0014669B /* LaunchScreen.storyboard in Resources */,
+				EB2D59D222B558D10014669B /* location_a.json in Resources */,
 				EB2D59C722B540E50014669B /* GoogleService-Info.plist in Resources */,
 				EB2D59BC22B539CA0014669B /* Assets.xcassets in Resources */,
 				EB2D59BA22B539C80014669B /* Main.storyboard in Resources */,
+				EB2D59D422B558D70014669B /* location_b.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,12 +226,30 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-bored-together/Pods-bored-together-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Apollo/Apollo.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKShareKit/FBSDKShareKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FacebookCore/FacebookCore.framework",
+				"${BUILT_PRODUCTS_DIR}/FacebookLogin/FacebookLogin.framework",
+				"${BUILT_PRODUCTS_DIR}/FacebookShare/FacebookShare.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/lottie-ios/Lottie.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Apollo.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKShareKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookLogin.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookShare.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Lottie.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -213,8 +263,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB2D59D022B558230014669B /* SPageThree.swift in Sources */,
+				EB2D59CC22B558100014669B /* SPageOne.swift in Sources */,
 				EB2D59B722B539C80014669B /* ViewController.swift in Sources */,
+				EB2D59DA22B55B810014669B /* PageViewController.swift in Sources */,
 				EB2D59B522B539C80014669B /* AppDelegate.swift in Sources */,
+				EB2D59CE22B5581B0014669B /* SPageTwo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
