@@ -101,6 +101,7 @@ class PageViewController: UIPageViewController, UIPageViewControllerDelegate, UI
                     print("email: \(email)")
                   }
                   print("")
+                  self.performSegue(withIdentifier: "to_main_app", sender: self)
                 }
               })
             }

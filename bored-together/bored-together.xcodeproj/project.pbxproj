@@ -13,7 +13,6 @@
 		EB2D59BA22B539C80014669B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB2D59B822B539C80014669B /* Main.storyboard */; };
 		EB2D59BC22B539CA0014669B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB2D59BB22B539CA0014669B /* Assets.xcassets */; };
 		EB2D59BF22B539CA0014669B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB2D59BD22B539CA0014669B /* LaunchScreen.storyboard */; };
-		EB2D59C722B540E50014669B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EB2D59C622B540E50014669B /* GoogleService-Info.plist */; };
 		EB2D59CC22B558100014669B /* SPageOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2D59CB22B558100014669B /* SPageOne.swift */; };
 		EB2D59CE22B5581B0014669B /* SPageTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2D59CD22B5581B0014669B /* SPageTwo.swift */; };
 		EB2D59D022B558230014669B /* SPageThree.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2D59CF22B558230014669B /* SPageThree.swift */; };
@@ -21,6 +20,9 @@
 		EB2D59D422B558D70014669B /* location_b.json in Resources */ = {isa = PBXBuildFile; fileRef = EB2D59D322B558D70014669B /* location_b.json */; };
 		EB2D59D622B558DC0014669B /* location_c.json in Resources */ = {isa = PBXBuildFile; fileRef = EB2D59D522B558DC0014669B /* location_c.json */; };
 		EB2D59DA22B55B810014669B /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2D59D922B55B810014669B /* PageViewController.swift */; };
+		EB2D59E122B562AD0014669B /* MainApp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB2D59E022B562AD0014669B /* MainApp.storyboard */; };
+		EB2D59E422B570A90014669B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EB2D59E322B570A90014669B /* GoogleService-Info.plist */; };
+		EB2D59E622B580A50014669B /* CardSwipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2D59E522B580A50014669B /* CardSwipeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,7 +36,6 @@
 		EB2D59BB22B539CA0014669B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EB2D59BE22B539CA0014669B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EB2D59C022B539CA0014669B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EB2D59C622B540E50014669B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		EB2D59CB22B558100014669B /* SPageOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPageOne.swift; sourceTree = "<group>"; };
 		EB2D59CD22B5581B0014669B /* SPageTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPageTwo.swift; sourceTree = "<group>"; };
 		EB2D59CF22B558230014669B /* SPageThree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPageThree.swift; sourceTree = "<group>"; };
@@ -42,6 +43,9 @@
 		EB2D59D322B558D70014669B /* location_b.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = location_b.json; sourceTree = "<group>"; };
 		EB2D59D522B558DC0014669B /* location_c.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = location_c.json; sourceTree = "<group>"; };
 		EB2D59D922B55B810014669B /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
+		EB2D59E022B562AD0014669B /* MainApp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainApp.storyboard; sourceTree = "<group>"; };
+		EB2D59E322B570A90014669B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		EB2D59E522B580A50014669B /* CardSwipeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSwipeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,14 +90,11 @@
 		EB2D59B322B539C80014669B /* bored-together */ = {
 			isa = PBXGroup;
 			children = (
-				EB2D59CA22B557EA0014669B /* PageView */,
-				EB2D59B422B539C80014669B /* AppDelegate.swift */,
-				EB2D59B622B539C80014669B /* ViewController.swift */,
-				EB2D59B822B539C80014669B /* Main.storyboard */,
-				EB2D59BB22B539CA0014669B /* Assets.xcassets */,
-				EB2D59BD22B539CA0014669B /* LaunchScreen.storyboard */,
+				EB2D59E322B570A90014669B /* GoogleService-Info.plist */,
 				EB2D59C022B539CA0014669B /* Info.plist */,
-				EB2D59C622B540E50014669B /* GoogleService-Info.plist */,
+				EB2D59DB22B561BD0014669B /* Splash */,
+				EB2D59DF22B562910014669B /* Main */,
+				EB2D59DC22B561DF0014669B /* Supporting Files */,
 			);
 			path = "bored-together";
 			sourceTree = "<group>";
@@ -110,7 +111,36 @@
 				EB2D59D922B55B810014669B /* PageViewController.swift */,
 			);
 			name = PageView;
-			path = ..;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		EB2D59DB22B561BD0014669B /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				EB2D59B822B539C80014669B /* Main.storyboard */,
+				EB2D59CA22B557EA0014669B /* PageView */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
+		EB2D59DC22B561DF0014669B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EB2D59B422B539C80014669B /* AppDelegate.swift */,
+				EB2D59B622B539C80014669B /* ViewController.swift */,
+				EB2D59BD22B539CA0014669B /* LaunchScreen.storyboard */,
+				EB2D59BB22B539CA0014669B /* Assets.xcassets */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EB2D59DF22B562910014669B /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				EB2D59E022B562AD0014669B /* MainApp.storyboard */,
+				EB2D59E522B580A50014669B /* CardSwipeView.swift */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 		ECBD5DA68ED085FC34BB5D4C /* Frameworks */ = {
@@ -182,10 +212,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				EB2D59D622B558DC0014669B /* location_c.json in Resources */,
+				EB2D59E422B570A90014669B /* GoogleService-Info.plist in Resources */,
 				EB2D59BF22B539CA0014669B /* LaunchScreen.storyboard in Resources */,
 				EB2D59D222B558D10014669B /* location_a.json in Resources */,
-				EB2D59C722B540E50014669B /* GoogleService-Info.plist in Resources */,
 				EB2D59BC22B539CA0014669B /* Assets.xcassets in Resources */,
+				EB2D59E122B562AD0014669B /* MainApp.storyboard in Resources */,
 				EB2D59BA22B539C80014669B /* Main.storyboard in Resources */,
 				EB2D59D422B558D70014669B /* location_b.json in Resources */,
 			);
@@ -234,6 +265,7 @@
 				"${BUILT_PRODUCTS_DIR}/FacebookShare/FacebookShare.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/TinderSwipeView/TinderSwipeView.framework",
 				"${BUILT_PRODUCTS_DIR}/lottie-ios/Lottie.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -249,6 +281,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookShare.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TinderSwipeView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Lottie.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -264,6 +297,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EB2D59D022B558230014669B /* SPageThree.swift in Sources */,
+				EB2D59E622B580A50014669B /* CardSwipeView.swift in Sources */,
 				EB2D59CC22B558100014669B /* SPageOne.swift in Sources */,
 				EB2D59B722B539C80014669B /* ViewController.swift in Sources */,
 				EB2D59DA22B55B810014669B /* PageViewController.swift in Sources */,
@@ -416,7 +450,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 43PKD3926A;
 				INFOPLIST_FILE = "bored-together/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -435,7 +469,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 43PKD3926A;
 				INFOPLIST_FILE = "bored-together/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

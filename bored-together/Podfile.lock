@@ -53,6 +53,7 @@ PODS:
     - GoogleUtilities/Logger
   - GTMSessionFetcher/Core (1.2.2)
   - lottie-ios (3.0.6)
+  - TinderSwipeView (1.0.3)
 
 DEPENDENCIES:
   - Apollo
@@ -61,6 +62,7 @@ DEPENDENCIES:
   - FacebookShare
   - Firebase/Auth
   - lottie-ios
+  - TinderSwipeView
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -78,6 +80,7 @@ SPEC REPOS:
     - GoogleUtilities
     - GTMSessionFetcher
     - lottie-ios
+    - TinderSwipeView
 
 SPEC CHECKSUMS:
   Apollo: 4d690a9b2e48e8820182df4b988d7a253e1ee589
@@ -94,7 +97,8 @@ SPEC CHECKSUMS:
   GoogleUtilities: 84df567c76ca84f67b7bb40e769fdd4acc746a10
   GTMSessionFetcher: 61bb0f61a4cb560030f1222021178008a5727a23
   lottie-ios: d030b6cda141cfd8bbaa3db89264785e6fdf675a
+  TinderSwipeView: 9e9f8b263ec97c1f23fd2593cb0a583837b3a305
 
-PODFILE CHECKSUM: 3ad9fc1c7f4180300391dc2816a395cae7ff3274
+PODFILE CHECKSUM: 4635adcad9a50275d6a6cedb7abcc811f270b029
 
 COCOAPODS: 1.6.2

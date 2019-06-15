@@ -43,7 +43,11 @@
         <!--Page View Controller-->
         <scene sceneID="u6Y-Yi-mXL">
             <objects>
-                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="vK0-ML-xMt" customClass="PageViewController" customModule="bored_together" customModuleProvider="target" sceneMemberID="viewController"/>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="vK0-ML-xMt" customClass="PageViewController" customModule="bored_together" customModuleProvider="target" sceneMemberID="viewController">
+                    <connections>
+                        <segue destination="RJc-BU-gna" kind="show" identifier="to_main_app" id="G4P-aA-Rjz"/>
+                    </connections>
+                </pageViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2WW-7u-bAe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="862" y="-298"/>
@@ -62,6 +66,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Ac-CV-0x0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2281" y="-299"/>
+        </scene>
+        <!--MainApp-->
+        <scene sceneID="FIR-o7-pSO">
+            <objects>
+                <viewControllerPlaceholder storyboardName="MainApp" id="RJc-BU-gna" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oBb-gV-8AH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="862" y="261"/>
         </scene>
         <!--sThree-->
         <scene sceneID="nAR-BA-3dI">

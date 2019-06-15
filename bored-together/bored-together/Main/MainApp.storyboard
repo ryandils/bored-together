@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="jPH-kF-y4o">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Be Together-->
+        <scene sceneID="LZ5-eb-Tm8">
+            <objects>
+                <viewController id="jPH-kF-y4o" customClass="CardSwipeView" customModule="bored_together" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hLY-0o-eeV">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R6R-UO-DXC">
+                                <rect key="frame" x="20" y="44" width="46" height="46"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="46" id="GPS-Hu-LEg"/>
+                                    <constraint firstAttribute="width" constant="46" id="sdd-Yz-cg8"/>
+                                </constraints>
+                                <state key="normal" image="profile"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OcR-wq-Y9z">
+                                <rect key="frame" x="348" y="44" width="46" height="46"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="IWZ-UV-4GL"/>
+                                    <constraint firstAttribute="height" constant="46" id="KUX-lG-hNY"/>
+                                </constraints>
+                                <state key="normal" image="star"/>
+                            </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8v5-Je-Jdv">
+                                <rect key="frame" x="20" y="225" width="374" height="447"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="R6R-UO-DXC" firstAttribute="leading" secondItem="iGr-Gq-jbn" secondAttribute="leading" constant="20" id="Dzr-kF-Pci"/>
+                            <constraint firstItem="OcR-wq-Y9z" firstAttribute="top" secondItem="iGr-Gq-jbn" secondAttribute="top" id="Hca-Y3-RPy"/>
+                            <constraint firstItem="iGr-Gq-jbn" firstAttribute="trailing" secondItem="OcR-wq-Y9z" secondAttribute="trailing" constant="20" id="k40-Iz-WGz"/>
+                            <constraint firstItem="R6R-UO-DXC" firstAttribute="top" secondItem="iGr-Gq-jbn" secondAttribute="top" id="tzg-Qv-STv"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="iGr-Gq-jbn"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Be Together" id="fCQ-hu-gN9">
+                        <barButtonItem key="leftBarButtonItem" image="profile" id="m0C-YM-dKa"/>
+                        <barButtonItem key="rightBarButtonItem" image="star" id="7CC-Uc-sZF"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="containerView" destination="8v5-Je-Jdv" id="Qmd-3S-z8b"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YBq-r6-R51" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-810.14492753623199" y="93.75"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="cUm-mi-msb">
+            <objects>
+                <viewController id="yP5-gs-jxz" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9Jo-of-GGj">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="XBH-dr-ZCm"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KWW-mW-fhc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="819" y="93"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="profile" width="36" height="36"/>
+        <image name="star" width="36" height="36"/>
+    </resources>
+</document>

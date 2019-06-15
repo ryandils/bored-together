@@ -12,5 +12,6 @@ target 'bored-together' do
   pod 'FacebookLogin'
   pod 'FacebookShare'
   pod 'lottie-ios'
+  pod 'TinderSwipeView'
 
 end
