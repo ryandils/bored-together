@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		33C3282E22B54BE600103D44 /* AirbnbCereal-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 33C3282822B54BE600103D44 /* AirbnbCereal-ExtraBold.ttf */; };
+		33C3282F22B54BE600103D44 /* AirbnbCereal-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 33C3282922B54BE600103D44 /* AirbnbCereal-Light.ttf */; };
+		33C3283022B54BE600103D44 /* AirbnbCereal-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 33C3282A22B54BE600103D44 /* AirbnbCereal-Medium.ttf */; };
+		33C3283122B54BE600103D44 /* AirbnbCereal-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 33C3282B22B54BE600103D44 /* AirbnbCereal-Black.ttf */; };
+		33C3283222B54BE600103D44 /* AirbnbCereal-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 33C3282C22B54BE600103D44 /* AirbnbCereal-Bold.ttf */; };
+		33C3283322B54BE600103D44 /* AirbnbCereal-Book.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 33C3282D22B54BE600103D44 /* AirbnbCereal-Book.ttf */; };
 		55A00B114722C8BD8B7AB0E7 /* Pods_bored_together.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55DE25BBEC35CBB74CCD05F2 /* Pods_bored_together.framework */; };
 		EB2D59B522B539C80014669B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2D59B422B539C80014669B /* AppDelegate.swift */; };
 		EB2D59B722B539C80014669B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2D59B622B539C80014669B /* ViewController.swift */; };
@@ -18,6 +24,12 @@
 
 /* Begin PBXFileReference section */
 		28CEC85C13CFE5F620428404 /* Pods-bored-together.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bored-together.debug.xcconfig"; path = "Target Support Files/Pods-bored-together/Pods-bored-together.debug.xcconfig"; sourceTree = "<group>"; };
+		33C3282822B54BE600103D44 /* AirbnbCereal-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "AirbnbCereal-ExtraBold.ttf"; path = "../../../../cereal-airbnb-font/AirbnbCereal-ExtraBold.ttf"; sourceTree = "<group>"; };
+		33C3282922B54BE600103D44 /* AirbnbCereal-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "AirbnbCereal-Light.ttf"; path = "../../../../cereal-airbnb-font/AirbnbCereal-Light.ttf"; sourceTree = "<group>"; };
+		33C3282A22B54BE600103D44 /* AirbnbCereal-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "AirbnbCereal-Medium.ttf"; path = "../../../../cereal-airbnb-font/AirbnbCereal-Medium.ttf"; sourceTree = "<group>"; };
+		33C3282B22B54BE600103D44 /* AirbnbCereal-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "AirbnbCereal-Black.ttf"; path = "../../../../cereal-airbnb-font/AirbnbCereal-Black.ttf"; sourceTree = "<group>"; };
+		33C3282C22B54BE600103D44 /* AirbnbCereal-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "AirbnbCereal-Bold.ttf"; path = "../../../../cereal-airbnb-font/AirbnbCereal-Bold.ttf"; sourceTree = "<group>"; };
+		33C3282D22B54BE600103D44 /* AirbnbCereal-Book.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "AirbnbCereal-Book.ttf"; path = "../../../../cereal-airbnb-font/AirbnbCereal-Book.ttf"; sourceTree = "<group>"; };
 		38184EE1DABD9FF96C1C3334 /* Pods-bored-together.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bored-together.release.xcconfig"; path = "Target Support Files/Pods-bored-together/Pods-bored-together.release.xcconfig"; sourceTree = "<group>"; };
 		55DE25BBEC35CBB74CCD05F2 /* Pods_bored_together.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_bored_together.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB2D59B122B539C80014669B /* bored-together.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "bored-together.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -42,13 +54,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		33C3282722B549A500103D44 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				33C3282B22B54BE600103D44 /* AirbnbCereal-Black.ttf */,
+				33C3282C22B54BE600103D44 /* AirbnbCereal-Bold.ttf */,
+				33C3282D22B54BE600103D44 /* AirbnbCereal-Book.ttf */,
+				33C3282822B54BE600103D44 /* AirbnbCereal-ExtraBold.ttf */,
+				33C3282922B54BE600103D44 /* AirbnbCereal-Light.ttf */,
+				33C3282A22B54BE600103D44 /* AirbnbCereal-Medium.ttf */,
+			);
+			path = fonts;
+			sourceTree = "<group>";
+			usesTabs = 0;
+		};
 		9275F098695C673BFB36D3B8 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				28CEC85C13CFE5F620428404 /* Pods-bored-together.debug.xcconfig */,
 				38184EE1DABD9FF96C1C3334 /* Pods-bored-together.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -73,6 +98,7 @@
 		EB2D59B322B539C80014669B /* bored-together */ = {
 			isa = PBXGroup;
 			children = (
+				33C3282722B549A500103D44 /* fonts */,
 				EB2D59B422B539C80014669B /* AppDelegate.swift */,
 				EB2D59B622B539C80014669B /* ViewController.swift */,
 				EB2D59B822B539C80014669B /* Main.storyboard */,
@@ -152,10 +178,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33C3282E22B54BE600103D44 /* AirbnbCereal-ExtraBold.ttf in Resources */,
+				33C3283022B54BE600103D44 /* AirbnbCereal-Medium.ttf in Resources */,
+				33C3283222B54BE600103D44 /* AirbnbCereal-Bold.ttf in Resources */,
+				33C3282F22B54BE600103D44 /* AirbnbCereal-Light.ttf in Resources */,
 				EB2D59BF22B539CA0014669B /* LaunchScreen.storyboard in Resources */,
 				EB2D59C722B540E50014669B /* GoogleService-Info.plist in Resources */,
 				EB2D59BC22B539CA0014669B /* Assets.xcassets in Resources */,
+				33C3283122B54BE600103D44 /* AirbnbCereal-Black.ttf in Resources */,
 				EB2D59BA22B539C80014669B /* Main.storyboard in Resources */,
+				33C3283322B54BE600103D44 /* AirbnbCereal-Book.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
