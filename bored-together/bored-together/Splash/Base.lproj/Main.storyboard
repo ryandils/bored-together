@@ -36,7 +36,7 @@
         <!--Page View Controller-->
         <scene sceneID="PrR-Ff-y3W">
             <objects>
-                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="yeZ-52-zct" customClass="PageViewController" customModule="bored_together" customModuleProvider="target" sceneMemberID="viewController">
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="yeZ-52-zct" customClass="PageViewController" customModule="bored_together" customModuleProvider="target" sceneMemberID="viewController">
                     <connections>
                         <segue destination="Lky-CH-SzF" kind="show" identifier="to_main_app" id="sC4-fr-VY2"/>
                     </connections>

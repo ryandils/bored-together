@@ -10,20 +10,68 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Main Select View-->
         <scene sceneID="F9j-0D-dRm">
             <objects>
-                <viewController id="4dc-U4-us2" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MainSelectView" id="4dc-U4-us2" customClass="MainSelectView" customModule="bored_together" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9A2-zc-Lo4">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.0" green="0.50196078430000002" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pGC-20-Lxy">
+                                <rect key="frame" x="20" y="44" width="36" height="36"/>
+                                <state key="normal" image="profile"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X3U-g9-O12">
+                                <rect key="frame" x="364" y="41" width="30" height="42"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <state key="normal" title="@"/>
+                            </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KyX-fD-m9L">
+                                <rect key="frame" x="20" y="229" width="374" height="546"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                        <size key="value" width="0.0" height="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eSY-N6-UhE">
+                                <rect key="frame" x="170" y="787" width="75" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="100"/>
+                                <state key="normal" title="+"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.64742682101946314" green="0.82703019923998811" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="l66-lC-T7E" firstAttribute="top" secondItem="X3U-g9-O12" secondAttribute="top" constant="3" id="HIp-ry-yja"/>
+                            <constraint firstItem="pGC-20-Lxy" firstAttribute="top" secondItem="l66-lC-T7E" secondAttribute="top" id="agm-KN-dwS"/>
+                            <constraint firstItem="pGC-20-Lxy" firstAttribute="leading" secondItem="l66-lC-T7E" secondAttribute="leading" constant="20" id="gjE-gz-wGd"/>
+                            <constraint firstItem="l66-lC-T7E" firstAttribute="trailing" secondItem="X3U-g9-O12" secondAttribute="trailing" constant="20" id="mLy-md-JIe"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="l66-lC-T7E"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Sx-bl-Yxm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-432" y="85"/>
+            <point key="canvasLocation" x="-433.33333333333337" y="84.375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="profile" width="36" height="36"/>
+    </resources>
 </document>

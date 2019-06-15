@@ -43,8 +43,7 @@ class PageViewController: UIPageViewController, UIPageViewControllerDelegate, UI
     //    }
   }
   
-  override func viewDidAppear(_ animated: Bool) {
-    
+  override func viewWillLayoutSubviews() {
     // 255, 35
     
     facebook_button = UIButton(frame: CGRect(x: 0, y: (self.view.frame.maxY - self.view.frame.maxY/7), width: 265, height: 45))
@@ -100,8 +99,11 @@ class PageViewController: UIPageViewController, UIPageViewControllerDelegate, UI
                   if let email : NSString = (result! as AnyObject).value(forKey: "email") as? NSString {
                     print("email: \(email)")
                   }
-                  print("PERFORMING SEGUE")
-                  self.performSegue(withIdentifier: "to_main_app", sender: self)
+                  
+                  let storyBoard: UIStoryboard = UIStoryboard(name: "MainApp", bundle: nil)
+                  let mainSelectView = storyBoard.instantiateViewController(withIdentifier: "MainSelectView") as! MainSelectView
+                  self.present(mainSelectView, animated: true, completion: nil)
+
                 }
               })
             }
