@@ -6,5 +6,6 @@ target 'bored-together' do
   use_frameworks!
 
   # Pods for bored-together
+  pod 'Apollo'
 
 end

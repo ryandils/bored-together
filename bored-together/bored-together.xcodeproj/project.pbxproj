@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		55A00B114722C8BD8B7AB0E7 /* Pods_bored_together.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55DE25BBEC35CBB74CCD05F2 /* Pods_bored_together.framework */; };
 		EB2D59B522B539C80014669B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2D59B422B539C80014669B /* AppDelegate.swift */; };
 		EB2D59B722B539C80014669B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2D59B622B539C80014669B /* ViewController.swift */; };
 		EB2D59BA22B539C80014669B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB2D59B822B539C80014669B /* Main.storyboard */; };
@@ -16,6 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		28CEC85C13CFE5F620428404 /* Pods-bored-together.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bored-together.debug.xcconfig"; path = "Target Support Files/Pods-bored-together/Pods-bored-together.debug.xcconfig"; sourceTree = "<group>"; };
+		38184EE1DABD9FF96C1C3334 /* Pods-bored-together.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bored-together.release.xcconfig"; path = "Target Support Files/Pods-bored-together/Pods-bored-together.release.xcconfig"; sourceTree = "<group>"; };
+		55DE25BBEC35CBB74CCD05F2 /* Pods_bored_together.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_bored_together.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB2D59B122B539C80014669B /* bored-together.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "bored-together.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB2D59B422B539C80014669B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EB2D59B622B539C80014669B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -31,17 +35,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55A00B114722C8BD8B7AB0E7 /* Pods_bored_together.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9275F098695C673BFB36D3B8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				28CEC85C13CFE5F620428404 /* Pods-bored-together.debug.xcconfig */,
+				38184EE1DABD9FF96C1C3334 /* Pods-bored-together.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		EB2D59A822B539C80014669B = {
 			isa = PBXGroup;
 			children = (
 				EB2D59B322B539C80014669B /* bored-together */,
 				EB2D59B222B539C80014669B /* Products */,
+				9275F098695C673BFB36D3B8 /* Pods */,
+				ECBD5DA68ED085FC34BB5D4C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +84,14 @@
 			path = "bored-together";
 			sourceTree = "<group>";
 		};
+		ECBD5DA68ED085FC34BB5D4C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				55DE25BBEC35CBB74CCD05F2 /* Pods_bored_together.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EB2D59C322B539CA0014669B /* Build configuration list for PBXNativeTarget "bored-together" */;
 			buildPhases = (
+				71F4C4BB5F8516BFE2DC123B /* [CP] Check Pods Manifest.lock */,
 				EB2D59AD22B539C80014669B /* Sources */,
 				EB2D59AE22B539C80014669B /* Frameworks */,
 				EB2D59AF22B539C80014669B /* Resources */,
+				FD4FE3417C95B9A9A89C7B3C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,6 +160,53 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		71F4C4BB5F8516BFE2DC123B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-bored-together-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FD4FE3417C95B9A9A89C7B3C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-bored-together/Pods-bored-together-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Apollo/Apollo.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Apollo.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-bored-together/Pods-bored-together-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		EB2D59AD22B539C80014669B /* Sources */ = {
@@ -284,6 +358,7 @@
 		};
 		EB2D59C422B539CA0014669B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 28CEC85C13CFE5F620428404 /* Pods-bored-together.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -302,6 +377,7 @@
 		};
 		EB2D59C522B539CA0014669B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 38184EE1DABD9FF96C1C3334 /* Pods-bored-together.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
