@@ -34,6 +34,15 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>UIAppFonts</key>
+	<array>
+		<string>AirbnbCereal-Black.ttf</string>
+		<string>AirbnbCereal-Light.ttf</string>
+		<string>AirbnbCereal-Bold.ttf</string>
+		<string>AirbnbCereal-ExtraBold.ttf</string>
+		<string>AirbnbCereal-Light.ttf</string>
+		<string>AirbnbCereal-Medium.ttf</string>
+	</array>
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
