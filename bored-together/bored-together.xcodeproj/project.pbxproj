@@ -13,13 +13,13 @@
 		33C3283122B54BE600103D44 /* AirbnbCereal-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 33C3282B22B54BE600103D44 /* AirbnbCereal-Black.ttf */; };
 		33C3283222B54BE600103D44 /* AirbnbCereal-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 33C3282C22B54BE600103D44 /* AirbnbCereal-Bold.ttf */; };
 		33C3283322B54BE600103D44 /* AirbnbCereal-Book.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 33C3282D22B54BE600103D44 /* AirbnbCereal-Book.ttf */; };
+		33C3283522B553E900103D44 /* GenderSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C3283422B553E900103D44 /* GenderSelectionView.swift */; };
 		55A00B114722C8BD8B7AB0E7 /* Pods_bored_together.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55DE25BBEC35CBB74CCD05F2 /* Pods_bored_together.framework */; };
 		EB2D59B522B539C80014669B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2D59B422B539C80014669B /* AppDelegate.swift */; };
 		EB2D59B722B539C80014669B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2D59B622B539C80014669B /* ViewController.swift */; };
 		EB2D59BA22B539C80014669B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB2D59B822B539C80014669B /* Main.storyboard */; };
 		EB2D59BC22B539CA0014669B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB2D59BB22B539CA0014669B /* Assets.xcassets */; };
 		EB2D59BF22B539CA0014669B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB2D59BD22B539CA0014669B /* LaunchScreen.storyboard */; };
-		EB2D59C722B540E50014669B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EB2D59C622B540E50014669B /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +30,7 @@
 		33C3282B22B54BE600103D44 /* AirbnbCereal-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "AirbnbCereal-Black.ttf"; path = "../../../../cereal-airbnb-font/AirbnbCereal-Black.ttf"; sourceTree = "<group>"; };
 		33C3282C22B54BE600103D44 /* AirbnbCereal-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "AirbnbCereal-Bold.ttf"; path = "../../../../cereal-airbnb-font/AirbnbCereal-Bold.ttf"; sourceTree = "<group>"; };
 		33C3282D22B54BE600103D44 /* AirbnbCereal-Book.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "AirbnbCereal-Book.ttf"; path = "../../../../cereal-airbnb-font/AirbnbCereal-Book.ttf"; sourceTree = "<group>"; };
+		33C3283422B553E900103D44 /* GenderSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenderSelectionView.swift; sourceTree = "<group>"; };
 		38184EE1DABD9FF96C1C3334 /* Pods-bored-together.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bored-together.release.xcconfig"; path = "Target Support Files/Pods-bored-together/Pods-bored-together.release.xcconfig"; sourceTree = "<group>"; };
 		55DE25BBEC35CBB74CCD05F2 /* Pods_bored_together.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_bored_together.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB2D59B122B539C80014669B /* bored-together.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "bored-together.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -39,7 +40,6 @@
 		EB2D59BB22B539CA0014669B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EB2D59BE22B539CA0014669B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EB2D59C022B539CA0014669B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EB2D59C622B540E50014669B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,7 +105,7 @@
 				EB2D59BB22B539CA0014669B /* Assets.xcassets */,
 				EB2D59BD22B539CA0014669B /* LaunchScreen.storyboard */,
 				EB2D59C022B539CA0014669B /* Info.plist */,
-				EB2D59C622B540E50014669B /* GoogleService-Info.plist */,
+				33C3283422B553E900103D44 /* GenderSelectionView.swift */,
 			);
 			path = "bored-together";
 			sourceTree = "<group>";
@@ -183,7 +183,6 @@
 				33C3283222B54BE600103D44 /* AirbnbCereal-Bold.ttf in Resources */,
 				33C3282F22B54BE600103D44 /* AirbnbCereal-Light.ttf in Resources */,
 				EB2D59BF22B539CA0014669B /* LaunchScreen.storyboard in Resources */,
-				EB2D59C722B540E50014669B /* GoogleService-Info.plist in Resources */,
 				EB2D59BC22B539CA0014669B /* Assets.xcassets in Resources */,
 				33C3283122B54BE600103D44 /* AirbnbCereal-Black.ttf in Resources */,
 				EB2D59BA22B539C80014669B /* Main.storyboard in Resources */,
@@ -245,6 +244,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33C3283522B553E900103D44 /* GenderSelectionView.swift in Sources */,
 				EB2D59B722B539C80014669B /* ViewController.swift in Sources */,
 				EB2D59B522B539C80014669B /* AppDelegate.swift in Sources */,
 			);
