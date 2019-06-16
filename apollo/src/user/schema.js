@@ -1,14 +1,26 @@
 import { gql } from 'apollo-server'
 import casual from 'casual'
 
+import { flaskAPI } from '../datasources'
+
 export const schema = gql`
 	type User {
-		id: ID!
-		facebookToken: String!
-		firstName: String!
-		lastName: String!
-		dob: String!
-		gender: String!
+		id: ID
+		facebookToken: String
+		email: String
+		firstName: String
+		lastName: String
+		dob: String
+		gender: String
+		profilePictureUrl: String
+	}
+
+	input UserInput {
+		email: String
+		firstName: String
+		lastName: String
+		dob: String
+		gender: String
 		profilePictureUrl: String
 	}
 `
@@ -28,6 +40,9 @@ export const resolvers = {
 			gender: casual.gender,
 			profilePictureUrl: null
 		})
+	},
+	Mutation: {
+		createUser: (user) => flaskAPI.createUser(user)
 	}
 }
 

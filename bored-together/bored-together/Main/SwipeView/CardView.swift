@@ -9,19 +9,36 @@
 import Foundation
 import UIKit
 
+let things: [thing] = [thing(img: #imageLiteral(resourceName: "KayakinginGLBA"), activity: "Kayaking", place: "Algonquin Provincial Park, ON", people: "15 people going"),
+                       thing(img: #imageLiteral(resourceName: "skydive"), activity: "Sky diving ", place: "The Sky", people: "2 people going"),
+                       thing(img: #imageLiteral(resourceName: "bubble"), activity: "Bubbly bath", place: "Your bathroom", people: "0 people going"),
+                       thing(img: #imageLiteral(resourceName: "food"), activity: "Home cooked meal", place: "A kitchen", people: "1 person going")]
+
 class CardView: UIView {
   
-  @IBOutlet weak var labelText: UILabel!
-  @IBOutlet weak var imageViewProfile: UIImageView!
+
   @IBOutlet var contentView: UIView!
-  @IBOutlet weak var buttonAction: UIButton!
   @IBOutlet weak var newContentView: UIView!
   @IBOutlet weak var newContainerView: UIView!
   
+  @IBOutlet weak var activity: UILabel!
+  @IBOutlet weak var place: UILabel!
+  @IBOutlet weak var pG: UILabel!
+  @IBOutlet weak var actImage: UIImageView!
+  
+  public var thing: thing?
+  
   var userModel : UserModel! {
     didSet{
+      
+      let thg = things[Int.random(in: 0 ..< 4)]
 
+      self.actImage.image = thg.img
+      self.activity.text = thg.activity
+      self.place.text = thg.place
+      self.pG.text = thg.people
       self.newContainerView.backgroundColor = .white
+      
 //      if Bool.random() {
 //        self.newContainerView.backgroundColor = UIColor(rgb: 0x0080FE)
 //      } else {
@@ -52,10 +69,10 @@ class CardView: UIView {
     // imageViewProfile.clipsToBounds = true
   }
   
-  private func attributeStringForModel(userModel:UserModel) -> NSAttributedString{
+  private func attributeStringForModel(userModel:thing) -> NSAttributedString{
     
-    let attributedText = NSMutableAttributedString(string: userModel.name, attributes: [.foregroundColor: UIColor.white,.font:UIFont.boldSystemFont(ofSize: 25)])
-    attributedText.append(NSAttributedString(string: "\nnums :\(userModel.num!) - (nib view)" , attributes: [.foregroundColor: UIColor.white,.font:UIFont.systemFont(ofSize: 18)]))
+    let attributedText = NSMutableAttributedString(string: "", attributes: [.foregroundColor: UIColor.white,.font:UIFont.boldSystemFont(ofSize: 25)])
+    attributedText.append(NSAttributedString(string: "\nnums : - (nib view)" , attributes: [.foregroundColor: UIColor.white,.font:UIFont.systemFont(ofSize: 18)]))
     return attributedText
   }
   
