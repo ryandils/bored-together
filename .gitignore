@@ -82,6 +82,3 @@ fastlane/test_output
 iOSInjectionProject/
 
 .idea
-.idea/vcs.xml
-
-.DS_Store

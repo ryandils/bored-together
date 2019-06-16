@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Ghs-kO-byz">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="AirbnbCereal-Light.ttf">
+            <string>AirbnbCerealApp-Light</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--MainApp-->
+        <scene sceneID="iSk-jP-GVR">
+            <objects>
+                <viewControllerPlaceholder storyboardName="MainApp" id="oWC-jK-ShQ" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="M13-CV-Coo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1163" y="-321"/>
+        </scene>
+        <!--Activity Table View-->
+        <scene sceneID="szU-UR-8Ag">
+            <objects>
+                <viewController storyboardIdentifier="ActivityTableView" id="Ghs-kO-byz" customClass="ActivityTableView" customModule="bored_together" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yme-VA-xui">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="my activities" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MIu-MK-fZY">
+                                <rect key="frame" x="145" y="73" width="124" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AirbnbCerealApp-Light" family="Airbnb Cereal App" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vVN-8O-Ma2">
+                                <rect key="frame" x="72" y="790" width="270" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="AirbnbCerealApp-Light" family="Airbnb Cereal App" pointSize="22"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="start something new">
+                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="nEZ-jU-Kjm">
+                                <rect key="frame" x="0.0" y="139" width="414" height="637"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="ActivityCell" rowHeight="140" id="fOm-fd-kil" customClass="ActivityCell" customModule="bored_together" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="140"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="fOm-fd-kil" id="jbu-qY-uBV">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="140"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2QY-jq-xsI" customClass="DesignView" customModule="bored_together" customModuleProvider="target">
+                                                    <rect key="frame" x="20" y="11" width="374" height="119"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gBP-He-dD0">
+                                                            <rect key="frame" x="17" y="14.5" width="90" height="90"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="90" id="2DP-Ke-kvH"/>
+                                                                <constraint firstAttribute="height" constant="90" id="OSi-tC-g2C"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Title Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3PA-12-k3t">
+                                                            <rect key="frame" x="119" y="16" width="255" height="24"/>
+                                                            <fontDescription key="fontDescription" name="AirbnbCerealApp-Light" family="Airbnb Cereal App" pointSize="18"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Age Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uan-sF-KKt">
+                                                            <rect key="frame" x="256" y="78" width="100" height="29"/>
+                                                            <fontDescription key="fontDescription" name="AirbnbCerealApp-Light" family="Airbnb Cereal App" pointSize="22"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="X joined so far" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xpe-3W-8hR">
+                                                            <rect key="frame" x="129" y="84" width="106" height="17"/>
+                                                            <fontDescription key="fontDescription" name="AirbnbCerealApp-Light" family="Airbnb Cereal App" pointSize="13"/>
+                                                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Location Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nai-Py-hlX">
+                                                            <rect key="frame" x="127" y="46" width="247" height="20"/>
+                                                            <fontDescription key="fontDescription" name="AirbnbCerealApp-Light" family="Airbnb Cereal App" pointSize="15"/>
+                                                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="bottom" secondItem="3PA-12-k3t" secondAttribute="bottom" constant="79" id="20G-Cn-Tmu"/>
+                                                        <constraint firstItem="xpe-3W-8hR" firstAttribute="leading" secondItem="2QY-jq-xsI" secondAttribute="leading" constant="129" id="2Qf-Eh-gV4"/>
+                                                        <constraint firstItem="Uan-sF-KKt" firstAttribute="leading" secondItem="2QY-jq-xsI" secondAttribute="leading" constant="256" id="3La-MV-rju"/>
+                                                        <constraint firstItem="gBP-He-dD0" firstAttribute="centerY" secondItem="2QY-jq-xsI" secondAttribute="centerY" id="5Xb-lD-XJl"/>
+                                                        <constraint firstItem="xpe-3W-8hR" firstAttribute="top" secondItem="2QY-jq-xsI" secondAttribute="top" constant="84" id="9jw-NS-gyZ"/>
+                                                        <constraint firstAttribute="bottom" secondItem="xpe-3W-8hR" secondAttribute="bottom" constant="18" id="9wp-ce-4Xz"/>
+                                                        <constraint firstAttribute="trailing" secondItem="gBP-He-dD0" secondAttribute="trailing" constant="267" id="Ao6-qA-Qxa"/>
+                                                        <constraint firstItem="gBP-He-dD0" firstAttribute="leading" secondItem="2QY-jq-xsI" secondAttribute="leading" constant="17" id="JAP-mx-FrR"/>
+                                                        <constraint firstAttribute="bottom" secondItem="Uan-sF-KKt" secondAttribute="bottom" constant="12" id="JuO-mV-uzg"/>
+                                                        <constraint firstItem="3PA-12-k3t" firstAttribute="leading" secondItem="2QY-jq-xsI" secondAttribute="leading" constant="119" id="Mjr-z6-JZj"/>
+                                                        <constraint firstAttribute="bottom" secondItem="Nai-Py-hlX" secondAttribute="bottom" constant="53" id="Rk1-QM-MfG"/>
+                                                        <constraint firstItem="3PA-12-k3t" firstAttribute="top" secondItem="2QY-jq-xsI" secondAttribute="top" constant="16" id="YAG-SV-Pdx"/>
+                                                        <constraint firstItem="Nai-Py-hlX" firstAttribute="top" secondItem="2QY-jq-xsI" secondAttribute="top" constant="46" id="a0b-XS-T0Y"/>
+                                                        <constraint firstItem="Nai-Py-hlX" firstAttribute="leading" secondItem="2QY-jq-xsI" secondAttribute="leading" constant="127" id="fx8-2A-ZSB"/>
+                                                        <constraint firstAttribute="trailing" secondItem="Uan-sF-KKt" secondAttribute="trailing" constant="18" id="vRj-kG-8kM"/>
+                                                        <constraint firstItem="Uan-sF-KKt" firstAttribute="top" secondItem="2QY-jq-xsI" secondAttribute="top" constant="78" id="xha-sd-y2w"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <constraints>
+                                                <constraint firstItem="2QY-jq-xsI" firstAttribute="centerX" secondItem="jbu-qY-uBV" secondAttribute="centerX" id="4og-Qz-FW1"/>
+                                                <constraint firstItem="2QY-jq-xsI" firstAttribute="leading" secondItem="jbu-qY-uBV" secondAttribute="leading" constant="20" id="afj-Tg-7dg"/>
+                                                <constraint firstItem="2QY-jq-xsI" firstAttribute="centerX" secondItem="jbu-qY-uBV" secondAttribute="centerX" id="it0-bZ-3rw"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <outlet property="AgeLabel" destination="Uan-sF-KKt" id="sKX-DT-le4"/>
+                                            <outlet property="ImageView" destination="gBP-He-dD0" id="2La-E1-ZbA"/>
+                                            <outlet property="JoinedLabel" destination="xpe-3W-8hR" id="4SL-Uf-0tc"/>
+                                            <outlet property="LocationLabel" destination="Nai-Py-hlX" id="dLi-Xc-XHg"/>
+                                            <outlet property="TitleLabel" destination="3PA-12-k3t" id="4sf-sX-mHO"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="nEZ-jU-Kjm" firstAttribute="leading" secondItem="J6a-Ba-SkX" secondAttribute="leading" id="7uJ-6f-a82"/>
+                            <constraint firstItem="J6a-Ba-SkX" firstAttribute="trailing" secondItem="nEZ-jU-Kjm" secondAttribute="trailing" id="Zgz-em-AkH"/>
+                            <constraint firstItem="J6a-Ba-SkX" firstAttribute="bottom" secondItem="nEZ-jU-Kjm" secondAttribute="bottom" constant="86" id="cjt-97-lgK"/>
+                            <constraint firstItem="nEZ-jU-Kjm" firstAttribute="top" secondItem="J6a-Ba-SkX" secondAttribute="top" constant="95" id="w6c-PV-f1H"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="J6a-Ba-SkX"/>
+                    </view>
+                    <connections>
+                        <outlet property="ActivityTableView" destination="nEZ-jU-Kjm" id="dPu-7T-bcw"/>
+                        <outlet property="bottomSpace" destination="cjt-97-lgK" id="yt6-gf-l8f"/>
+                        <segue destination="oWC-jK-ShQ" kind="show" identifier="back_to_main" customClass="SegueFromLeft" customModule="bored_together" customModuleProvider="target" id="VXD-ay-HzY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kY1-I2-dCi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-433.33333333333337" y="-131.25"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="4dc-U4-us2">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="AirbnbCereal-Medium.ttf">
+            <string>AirbnbCerealApp-Medium</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Profile-->
+        <scene sceneID="kCB-cg-dxf">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Profile" id="hfe-Er-rHK" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MA9-MP-XHw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1150" y="-45"/>
+        </scene>
+        <!--Main Select View-->
+        <scene sceneID="F9j-0D-dRm">
+            <objects>
+                <viewController storyboardIdentifier="MainSelectView" id="4dc-U4-us2" customClass="MainSelectView" customModule="bored_together" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9A2-zc-Lo4">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pGC-20-Lxy">
+                                <rect key="frame" x="20" y="44" width="36" height="36"/>
+                                <color key="tintColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" image="profile"/>
+                                <connections>
+                                    <segue destination="hfe-Er-rHK" kind="show" customClass="SegueFromLeft" customModule="bored_together" customModuleProvider="target" id="flr-jA-XSg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X3U-g9-O12">
+                                <rect key="frame" x="364" y="41" width="30" height="42"/>
+                                <fontDescription key="fontDescription" name="AirbnbCerealApp-Medium" family="Airbnb Cereal App" pointSize="23"/>
+                                <state key="normal" title="@">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Bb1-2u-LTR" kind="show" identifier="" customClass="SegueFromRight" customModule="bored_together" customModuleProvider="target" id="Fla-IH-oxw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DGI-MR-gfM">
+                                <rect key="frame" x="32" y="782" width="75" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="x.png"/>
+                                <connections>
+                                    <action selector="disLike:" destination="4dc-U4-us2" eventType="touchUpInside" id="YKD-dk-ade"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HuD-ja-K8d">
+                                <rect key="frame" x="307" y="782" width="75" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="heart.png"/>
+                                <connections>
+                                    <action selector="like:" destination="4dc-U4-us2" eventType="touchUpInside" id="hAo-UF-3qN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xFe-Sc-hfL">
+                                <rect key="frame" x="159" y="761" width="96" height="96"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="add_activity.png"/>
+                                <connections>
+                                    <segue destination="Bb1-2u-LTR" kind="show" identifier="new_activity" id="xRn-7Z-XRb"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KyX-fD-m9L">
+                                <rect key="frame" x="20" y="123" width="374" height="600"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                        <size key="value" width="0.0" height="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.50196078430000002" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="l66-lC-T7E" firstAttribute="top" secondItem="X3U-g9-O12" secondAttribute="top" constant="3" id="HIp-ry-yja"/>
+                            <constraint firstItem="pGC-20-Lxy" firstAttribute="top" secondItem="l66-lC-T7E" secondAttribute="top" id="agm-KN-dwS"/>
+                            <constraint firstItem="pGC-20-Lxy" firstAttribute="leading" secondItem="l66-lC-T7E" secondAttribute="leading" constant="20" id="gjE-gz-wGd"/>
+                            <constraint firstItem="l66-lC-T7E" firstAttribute="trailing" secondItem="X3U-g9-O12" secondAttribute="trailing" constant="20" id="mLy-md-JIe"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="l66-lC-T7E"/>
+                    </view>
+                    <connections>
+                        <outlet property="containerView" destination="KyX-fD-m9L" id="drS-cB-Fuh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9Sx-bl-Yxm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-433.33333333333337" y="84.375"/>
+        </scene>
+        <!--ActivityHouse-->
+        <scene sceneID="Cor-Rn-GPJ">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="ActivityHouse" storyboardName="ActivityHouse" id="Bb1-2u-LTR" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5yp-oR-nv7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="212" y="-163"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="add_activity.png" width="96" height="96"/>
+        <image name="heart.png" width="75" height="75"/>
+        <image name="profile" width="36" height="36"/>
+        <image name="x.png" width="75" height="75"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="Fla-IH-oxw"/>
+    </inferredMetricsTieBreakers>
+</document>
