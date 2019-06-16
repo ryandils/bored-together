@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		33C3283522B553E900103D44 /* GenderSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C3283422B553E900103D44 /* GenderSelectionView.swift */; };
+		33DA1EAF22B5B6AD004D28BD /* ActivityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33DA1EAE22B5B6AD004D28BD /* ActivityCell.swift */; };
+		33DA1EB922B5D1AE004D28BD /* ActivityHouse_2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33DA1EB822B5D1AE004D28BD /* ActivityHouse_2.storyboard */; };
+		33DA1EBB22B5D1DA004D28BD /* ActivityTableView_2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33DA1EBA22B5D1DA004D28BD /* ActivityTableView_2.swift */; };
+		33DA1EBD22B5D6F5004D28BD /* DesignView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33DA1EBC22B5D6F5004D28BD /* DesignView.swift */; };
 		55A00B114722C8BD8B7AB0E7 /* Pods_bored_together.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55DE25BBEC35CBB74CCD05F2 /* Pods_bored_together.framework */; };
 		EB2D59B522B539C80014669B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2D59B422B539C80014669B /* AppDelegate.swift */; };
 		EB2D59B722B539C80014669B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2D59B622B539C80014669B /* ViewController.swift */; };
@@ -36,6 +40,16 @@
 /* Begin PBXFileReference section */
 		28CEC85C13CFE5F620428404 /* Pods-bored-together.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bored-together.debug.xcconfig"; path = "Target Support Files/Pods-bored-together/Pods-bored-together.debug.xcconfig"; sourceTree = "<group>"; };
 		33C3283422B553E900103D44 /* GenderSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenderSelectionView.swift; sourceTree = "<group>"; };
+		33DA1EAE22B5B6AD004D28BD /* ActivityCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityCell.swift; sourceTree = "<group>"; };
+		33DA1EB822B5D1AE004D28BD /* ActivityHouse_2.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ActivityHouse_2.storyboard; sourceTree = "<group>"; };
+		33DA1EBA22B5D1DA004D28BD /* ActivityTableView_2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityTableView_2.swift; sourceTree = "<group>"; };
+		33DA1EBC22B5D6F5004D28BD /* DesignView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignView.swift; sourceTree = "<group>"; };
+		33DA1EBE22B5DFE6004D28BD /* AirbnbCereal-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AirbnbCereal-Medium.ttf"; sourceTree = "<group>"; };
+		33DA1EBF22B5DFE6004D28BD /* AirbnbCereal-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AirbnbCereal-Black.ttf"; sourceTree = "<group>"; };
+		33DA1EC022B5DFE6004D28BD /* AirbnbCereal-Book.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AirbnbCereal-Book.ttf"; sourceTree = "<group>"; };
+		33DA1EC122B5DFE6004D28BD /* AirbnbCereal-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AirbnbCereal-Bold.ttf"; sourceTree = "<group>"; };
+		33DA1EC222B5DFE6004D28BD /* AirbnbCereal-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AirbnbCereal-ExtraBold.ttf"; sourceTree = "<group>"; };
+		33DA1EC322B5DFE6004D28BD /* AirbnbCereal-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AirbnbCereal-Light.ttf"; sourceTree = "<group>"; };
 		38184EE1DABD9FF96C1C3334 /* Pods-bored-together.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bored-together.release.xcconfig"; path = "Target Support Files/Pods-bored-together/Pods-bored-together.release.xcconfig"; sourceTree = "<group>"; };
 		55DE25BBEC35CBB74CCD05F2 /* Pods_bored_together.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_bored_together.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB2D59B122B539C80014669B /* bored-together.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "bored-together.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -79,10 +93,25 @@
 		33C3282722B549A500103D44 /* fonts */ = {
 			isa = PBXGroup;
 			children = (
+				33DA1EBF22B5DFE6004D28BD /* AirbnbCereal-Black.ttf */,
+				33DA1EC122B5DFE6004D28BD /* AirbnbCereal-Bold.ttf */,
+				33DA1EC022B5DFE6004D28BD /* AirbnbCereal-Book.ttf */,
+				33DA1EC222B5DFE6004D28BD /* AirbnbCereal-ExtraBold.ttf */,
+				33DA1EC322B5DFE6004D28BD /* AirbnbCereal-Light.ttf */,
+				33DA1EBE22B5DFE6004D28BD /* AirbnbCereal-Medium.ttf */,
 			);
 			path = fonts;
 			sourceTree = "<group>";
 			usesTabs = 0;
+		};
+		33DA1EB722B5D18F004D28BD /* NewActivityHouse */ = {
+			isa = PBXGroup;
+			children = (
+				33DA1EB822B5D1AE004D28BD /* ActivityHouse_2.storyboard */,
+				33DA1EBA22B5D1DA004D28BD /* ActivityTableView_2.swift */,
+			);
+			path = NewActivityHouse;
+			sourceTree = "<group>";
 		};
 		9275F098695C673BFB36D3B8 /* Pods */ = {
 			isa = PBXGroup;
@@ -114,6 +143,7 @@
 		EB2D59B322B539C80014669B /* bored-together */ = {
 			isa = PBXGroup;
 			children = (
+				33DA1EB722B5D18F004D28BD /* NewActivityHouse */,
 				EB2D59FE22B58FA80014669B /* GoogleService-Info.plist */,
 				EB2D59E722B58D2D0014669B /* Splash */,
 				EB2D59E822B58D4C0014669B /* Main */,
@@ -195,6 +225,8 @@
 			children = (
 				EB2D5A0422B5A34A0014669B /* ActivityHouse.storyboard */,
 				EB2D5A0A22B5A3920014669B /* ActivityTableView.swift */,
+				33DA1EAE22B5B6AD004D28BD /* ActivityCell.swift */,
+				33DA1EBC22B5D6F5004D28BD /* DesignView.swift */,
 			);
 			path = ActivityHouse;
 			sourceTree = "<group>";
@@ -273,6 +305,7 @@
 				EB2D59FF22B58FA80014669B /* GoogleService-Info.plist in Resources */,
 				EB2D5A0522B5A34A0014669B /* ActivityHouse.storyboard in Resources */,
 				EB2D5A0722B5A3540014669B /* Profile.storyboard in Resources */,
+				33DA1EB922B5D1AE004D28BD /* ActivityHouse_2.storyboard in Resources */,
 				EB2D59BA22B539C80014669B /* Main.storyboard in Resources */,
 				EB2D5A0F22B5A8670014669B /* plus.png in Resources */,
 			);
@@ -360,12 +393,15 @@
 				EB2D5A0B22B5A3920014669B /* ActivityTableView.swift in Sources */,
 				EB2D5A0922B5A35F0014669B /* ProfileView.swift in Sources */,
 				EB2D59FB22B58EAB0014669B /* location_c.json in Sources */,
+				33DA1EBD22B5D6F5004D28BD /* DesignView.swift in Sources */,
 				EB2D59F522B58E630014669B /* SPageOne.swift in Sources */,
 				EB2D59B722B539C80014669B /* ViewController.swift in Sources */,
+				33DA1EAF22B5B6AD004D28BD /* ActivityCell.swift in Sources */,
 				EB2D59F122B58E400014669B /* SPageThree.swift in Sources */,
 				EB2D59B522B539C80014669B /* AppDelegate.swift in Sources */,
 				EB2D59EC22B58DC50014669B /* CardSwipeView.swift in Sources */,
 				EB2D5A1122B5ABC40014669B /* MainSelectView.swift in Sources */,
+				33DA1EBB22B5D1DA004D28BD /* ActivityTableView_2.swift in Sources */,
 				EB2D59F722B58E850014669B /* location_a.json in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

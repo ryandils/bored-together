@@ -26,6 +26,9 @@
                                 <rect key="frame" x="364" y="41" width="30" height="42"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
                                 <state key="normal" title="@"/>
+                                <connections>
+                                    <segue destination="Bb1-2u-LTR" kind="show" id="7Ab-t1-hCy"/>
+                                </connections>
                             </button>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KyX-fD-m9L">
                                 <rect key="frame" x="20" y="229" width="374" height="546"/>
@@ -69,6 +72,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Sx-bl-Yxm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-433.33333333333337" y="84.375"/>
+        </scene>
+        <!--ActivityHouse-->
+        <scene sceneID="Cor-Rn-GPJ">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="ActivityHouse" storyboardName="ActivityHouse" id="Bb1-2u-LTR" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5yp-oR-nv7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="212" y="-163"/>
         </scene>
     </scenes>
     <resources>

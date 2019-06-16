@@ -97,7 +97,7 @@ class PageViewController: UIPageViewController, UIPageViewControllerDelegate, UI
                     print("id: \(id)")
                   }
                   if let email : NSString = (result! as AnyObject).value(forKey: "email") as? NSString {
-                    print("email: \(email)")
+                    print("email: \(email)" )
                   }
                   
                   let storyBoard: UIStoryboard = UIStoryboard(name: "MainApp", bundle: nil)
