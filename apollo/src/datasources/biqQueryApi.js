@@ -1,3 +1,5 @@
+/* AUTH */
+
 /* Create user upon signup */
 const createUser = async () => {
 	// TODO
@@ -8,16 +10,19 @@ const login = async () => {
 	// TODO
 }
 
+/* ********************************************************************************************* */
+/* ACTIVITY */
+
+const getActivity = async (id) => {
+	// TODO
+}
+
 /* Get a randomly selected active activity */
 const getActiveActivity = async () => {
 	// Grab activities
 
 	// Pick activity at random
 	// return _chooseActivity(activities)
-}
-
-const getActivity = async () => {
-	// TODO
 }
 
 /* Pick activity randomly out of list of activities */
@@ -38,6 +43,13 @@ const joinActivity = async () => {
 
 /* Set the activity to be closed, so it can no longer be joined */
 const _closeActivity = async () => {
+	// TODO
+}
+
+/* ********************************************************************************************* */
+/* USER */
+
+const getUser = async (id) => {
 	// TODO
 }
 
