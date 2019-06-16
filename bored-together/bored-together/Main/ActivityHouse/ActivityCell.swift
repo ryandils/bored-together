@@ -19,6 +19,7 @@ class ActivityCell: UITableViewCell {
     @IBOutlet weak var TitleLabel: UILabel!
     @IBOutlet weak var LocationLabel: UILabel!
     @IBOutlet weak var AgeLabel: UILabel!
+    @IBOutlet weak var JoinedLabel: UILabel!
     
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
