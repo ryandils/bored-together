@@ -77,8 +77,8 @@
                                                                 <constraint firstAttribute="height" constant="90" id="OSi-tC-g2C"/>
                                                             </constraints>
                                                         </imageView>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Title Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3PA-12-k3t">
-                                                            <rect key="frame" x="119" y="16" width="255" height="24"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3PA-12-k3t">
+                                                            <rect key="frame" x="119" y="25.5" width="255" height="23.5"/>
                                                             <fontDescription key="fontDescription" name="AirbnbCerealApp-Light" family="Airbnb Cereal App" pointSize="18"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
@@ -95,8 +95,8 @@
                                                             <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Location Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nai-Py-hlX">
-                                                            <rect key="frame" x="127" y="46" width="247" height="20"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location Label" lineBreakMode="clip" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nai-Py-hlX">
+                                                            <rect key="frame" x="127" y="59" width="247" height="20"/>
                                                             <fontDescription key="fontDescription" name="AirbnbCerealApp-Light" family="Airbnb Cereal App" pointSize="15"/>
                                                             <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
@@ -104,7 +104,6 @@
                                                     </subviews>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="bottom" secondItem="3PA-12-k3t" secondAttribute="bottom" constant="79" id="20G-Cn-Tmu"/>
                                                         <constraint firstItem="xpe-3W-8hR" firstAttribute="leading" secondItem="2QY-jq-xsI" secondAttribute="leading" constant="129" id="2Qf-Eh-gV4"/>
                                                         <constraint firstItem="Uan-sF-KKt" firstAttribute="leading" secondItem="2QY-jq-xsI" secondAttribute="leading" constant="256" id="3La-MV-rju"/>
                                                         <constraint firstItem="gBP-He-dD0" firstAttribute="centerY" secondItem="2QY-jq-xsI" secondAttribute="centerY" id="5Xb-lD-XJl"/>
@@ -113,12 +112,14 @@
                                                         <constraint firstAttribute="trailing" secondItem="gBP-He-dD0" secondAttribute="trailing" constant="267" id="Ao6-qA-Qxa"/>
                                                         <constraint firstItem="gBP-He-dD0" firstAttribute="leading" secondItem="2QY-jq-xsI" secondAttribute="leading" constant="17" id="JAP-mx-FrR"/>
                                                         <constraint firstAttribute="bottom" secondItem="Uan-sF-KKt" secondAttribute="bottom" constant="12" id="JuO-mV-uzg"/>
-                                                        <constraint firstItem="3PA-12-k3t" firstAttribute="leading" secondItem="2QY-jq-xsI" secondAttribute="leading" constant="119" id="Mjr-z6-JZj"/>
-                                                        <constraint firstAttribute="bottom" secondItem="Nai-Py-hlX" secondAttribute="bottom" constant="53" id="Rk1-QM-MfG"/>
-                                                        <constraint firstItem="3PA-12-k3t" firstAttribute="top" secondItem="2QY-jq-xsI" secondAttribute="top" constant="16" id="YAG-SV-Pdx"/>
-                                                        <constraint firstItem="Nai-Py-hlX" firstAttribute="top" secondItem="2QY-jq-xsI" secondAttribute="top" constant="46" id="a0b-XS-T0Y"/>
+                                                        <constraint firstAttribute="trailing" secondItem="3PA-12-k3t" secondAttribute="trailing" id="QF5-Yk-Q7K"/>
+                                                        <constraint firstAttribute="bottom" secondItem="Nai-Py-hlX" secondAttribute="bottom" constant="40" id="Rk1-QM-MfG"/>
+                                                        <constraint firstItem="Nai-Py-hlX" firstAttribute="top" secondItem="2QY-jq-xsI" secondAttribute="top" constant="59" id="a0b-XS-T0Y"/>
                                                         <constraint firstItem="Nai-Py-hlX" firstAttribute="leading" secondItem="2QY-jq-xsI" secondAttribute="leading" constant="127" id="fx8-2A-ZSB"/>
+                                                        <constraint firstItem="3PA-12-k3t" firstAttribute="trailing" secondItem="Nai-Py-hlX" secondAttribute="trailing" id="loh-Fc-jcF"/>
+                                                        <constraint firstItem="3PA-12-k3t" firstAttribute="leading" secondItem="gBP-He-dD0" secondAttribute="trailing" constant="12" id="lrO-uI-CGG"/>
                                                         <constraint firstAttribute="trailing" secondItem="Uan-sF-KKt" secondAttribute="trailing" constant="18" id="vRj-kG-8kM"/>
+                                                        <constraint firstItem="Nai-Py-hlX" firstAttribute="top" secondItem="3PA-12-k3t" secondAttribute="bottom" constant="10" id="xDR-Ku-nEL"/>
                                                         <constraint firstItem="Uan-sF-KKt" firstAttribute="top" secondItem="2QY-jq-xsI" secondAttribute="top" constant="78" id="xha-sd-y2w"/>
                                                     </constraints>
                                                 </view>
