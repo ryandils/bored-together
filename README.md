@@ -45,7 +45,18 @@ After this command, you should be introduced to the frontend of our project.
 
 
 ### Backend setup 
-To open the backend project
+To open the backend project you will need to install node and npm using:
+```
+brew install node
+```
+From root, navigate into the Apollo directory using:
+```
+cd apollo/
+```
+Then, install Appolo GraphQL using:
+```
+npm install
+```
 
 ## Deployment
 
