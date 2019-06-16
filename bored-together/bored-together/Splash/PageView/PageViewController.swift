@@ -111,6 +111,10 @@ class PageViewController: UIPageViewController, UIPageViewControllerDelegate, UI
             }
           }
         }
+      } else {
+        let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let genderSelectionView = storyboard.instantiateViewController(withIdentifier: "GenderSelectionView") as! GenderSelectionView
+        self.present(genderSelectionView, animated: true, completion: nil)
       }
     })
     
