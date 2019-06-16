@@ -15,6 +15,14 @@
         </array>
     </customFonts>
     <scenes>
+        <!--Profile-->
+        <scene sceneID="kCB-cg-dxf">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Profile" id="hfe-Er-rHK" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MA9-MP-XHw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1150" y="-45"/>
+        </scene>
         <!--Main Select View-->
         <scene sceneID="F9j-0D-dRm">
             <objects>
@@ -27,6 +35,9 @@
                                 <rect key="frame" x="20" y="44" width="36" height="36"/>
                                 <color key="tintColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" image="profile"/>
+                                <connections>
+                                    <segue destination="hfe-Er-rHK" kind="show" customClass="SegueFromLeft" customModule="bored_together" customModuleProvider="target" id="flr-jA-XSg"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X3U-g9-O12">
                                 <rect key="frame" x="364" y="41" width="30" height="42"/>
@@ -108,6 +119,6 @@
         <image name="x.png" width="75" height="75"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="xRn-7Z-XRb"/>
+        <segue reference="Fla-IH-oxw"/>
     </inferredMetricsTieBreakers>
 </document>
