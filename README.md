@@ -1,6 +1,6 @@
 # B(ored) Together
 
-https://youtu.be/hCE9O-aX1fM
+[B(ored) Together](https://youtu.be/hCE9O-aX1fM)
 
 B(ored) Together is an iOS application that allows random people in the same location to connect over similar interests in a safe and friendly way. 
 
@@ -59,10 +59,6 @@ Then, install Appolo GraphQL using:
 ```
 npm install
 ```
-
-## Deployment
-
-Add additional notes about how to deploy this on a live system
 
 ## Built With
 
