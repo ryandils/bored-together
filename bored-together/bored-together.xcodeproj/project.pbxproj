@@ -7,7 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		03D44D40BAA1956E99D4F0F7 /* Pods_bored_together.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3136664A8B48B7461E59B94B /* Pods_bored_together.framework */; };
 		33C3283522B553E900103D44 /* GenderSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C3283422B553E900103D44 /* GenderSelectionView.swift */; };
+		EB0FD32E22B5C79400BC3C8E /* add_activity.png in Resources */ = {isa = PBXBuildFile; fileRef = EB0FD32D22B5C79300BC3C8E /* add_activity.png */; };
+		EB0FD33022B5CA2D00BC3C8E /* backpacking.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EB0FD32F22B5CA2D00BC3C8E /* backpacking.jpg */; };
+		EB0FD33822B5CC3800BC3C8E /* info_border.png in Resources */ = {isa = PBXBuildFile; fileRef = EB0FD33722B5CC3700BC3C8E /* info_border.png */; };
+		EB0FD33A22B5E8C400BC3C8E /* AgeSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0FD33922B5E8C400BC3C8E /* AgeSelectionView.swift */; };
+		EB0FD33B22B5F7BA00BC3C8E /* AirbnbCereal-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EB0FD33422B5CACC00BC3C8E /* AirbnbCereal-Medium.ttf */; };
+		EB0FD33C22B5F7BC00BC3C8E /* AirbnbCereal-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EB0FD33322B5CACC00BC3C8E /* AirbnbCereal-Light.ttf */; };
+		EB0FD33D22B5F7C100BC3C8E /* AirbnbCereal-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EB0FD33622B5CACC00BC3C8E /* AirbnbCereal-ExtraBold.ttf */; };
+		EB0FD33E22B5F7C300BC3C8E /* AirbnbCereal-Book.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EB0FD33522B5CACC00BC3C8E /* AirbnbCereal-Book.ttf */; };
+		EB0FD33F22B5F7C400BC3C8E /* AirbnbCereal-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EB0FD33222B5CACC00BC3C8E /* AirbnbCereal-Bold.ttf */; };
+		EB0FD34022B5F7C700BC3C8E /* AirbnbCereal-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EB0FD33122B5CACC00BC3C8E /* AirbnbCereal-Black.ttf */; };
+		EB0FD34222B5F8B900BC3C8E /* loading.json in Resources */ = {isa = PBXBuildFile; fileRef = EB0FD34122B5F8B900BC3C8E /* loading.json */; };
+		33DA1EAF22B5B6AD004D28BD /* ActivityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33DA1EAE22B5B6AD004D28BD /* ActivityCell.swift */; };
+		33DA1EB922B5D1AE004D28BD /* ActivityHouse_2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33DA1EB822B5D1AE004D28BD /* ActivityHouse_2.storyboard */; };
+		33DA1EBB22B5D1DA004D28BD /* ActivityTableView_2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33DA1EBA22B5D1DA004D28BD /* ActivityTableView_2.swift */; };
+		33DA1EBD22B5D6F5004D28BD /* DesignView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33DA1EBC22B5D6F5004D28BD /* DesignView.swift */; };
 		55A00B114722C8BD8B7AB0E7 /* Pods_bored_together.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55DE25BBEC35CBB74CCD05F2 /* Pods_bored_together.framework */; };
 		EB2D59B522B539C80014669B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2D59B422B539C80014669B /* AppDelegate.swift */; };
 		EB2D59B722B539C80014669B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2D59B622B539C80014669B /* ViewController.swift */; };
@@ -15,7 +31,6 @@
 		EB2D59BC22B539CA0014669B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB2D59BB22B539CA0014669B /* Assets.xcassets */; };
 		EB2D59BF22B539CA0014669B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB2D59BD22B539CA0014669B /* LaunchScreen.storyboard */; };
 		EB2D59EA22B58DB60014669B /* MainApp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB2D59E922B58DB60014669B /* MainApp.storyboard */; };
-		EB2D59EC22B58DC50014669B /* CardSwipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2D59EB22B58DC50014669B /* CardSwipeView.swift */; };
 		EB2D59EF22B58E2A0014669B /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2D59EE22B58E2A0014669B /* PageViewController.swift */; };
 		EB2D59F122B58E400014669B /* SPageThree.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2D59F022B58E400014669B /* SPageThree.swift */; };
 		EB2D59F322B58E530014669B /* SPageTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2D59F222B58E530014669B /* SPageTwo.swift */; };
@@ -28,11 +43,41 @@
 		EB2D5A0722B5A3540014669B /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB2D5A0622B5A3540014669B /* Profile.storyboard */; };
 		EB2D5A0922B5A35F0014669B /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2D5A0822B5A35F0014669B /* ProfileView.swift */; };
 		EB2D5A0B22B5A3920014669B /* ActivityTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2D5A0A22B5A3920014669B /* ActivityTableView.swift */; };
+		EB2D5A0D22B5A6B00014669B /* UIExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2D5A0C22B5A6B00014669B /* UIExtensions.swift */; };
+		EB2D5A0F22B5A8670014669B /* plus.png in Resources */ = {isa = PBXBuildFile; fileRef = EB2D5A0E22B5A8660014669B /* plus.png */; };
+		EB2D5A1122B5ABC40014669B /* MainSelectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2D5A1022B5ABC40014669B /* MainSelectView.swift */; };
+		EB2D5A1322B5AF770014669B /* CardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB2D5A1222B5AF770014669B /* CardView.xib */; };
+		EB2D5A1622B5AFE90014669B /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2D5A1522B5AFE90014669B /* CardView.swift */; };
+		EB2D5A1C22B5C6540014669B /* x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB2D5A1B22B5C6530014669B /* x.png */; };
+		EB2D5A1E22B5C6590014669B /* heart.png in Resources */ = {isa = PBXBuildFile; fileRef = EB2D5A1D22B5C6590014669B /* heart.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		28CEC85C13CFE5F620428404 /* Pods-bored-together.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bored-together.debug.xcconfig"; path = "Target Support Files/Pods-bored-together/Pods-bored-together.debug.xcconfig"; sourceTree = "<group>"; };
+		0DA484F655B57A260A5D1644 /* Pods-bored-together.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bored-together.release.xcconfig"; path = "Target Support Files/Pods-bored-together/Pods-bored-together.release.xcconfig"; sourceTree = "<group>"; };
+		244D32F7222F1B6CC7F43844 /* Pods-bored-together.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bored-together.debug.xcconfig"; path = "Target Support Files/Pods-bored-together/Pods-bored-together.debug.xcconfig"; sourceTree = "<group>"; };
+		3136664A8B48B7461E59B94B /* Pods_bored_together.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_bored_together.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		33C3283422B553E900103D44 /* GenderSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenderSelectionView.swift; sourceTree = "<group>"; };
+		EB0FD32D22B5C79300BC3C8E /* add_activity.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = add_activity.png; sourceTree = "<group>"; };
+		EB0FD32F22B5CA2D00BC3C8E /* backpacking.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = backpacking.jpg; sourceTree = "<group>"; };
+		EB0FD33122B5CACC00BC3C8E /* AirbnbCereal-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "AirbnbCereal-Black.ttf"; path = "bored-together/fonts/AirbnbCereal-Black.ttf"; sourceTree = SOURCE_ROOT; };
+		EB0FD33222B5CACC00BC3C8E /* AirbnbCereal-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "AirbnbCereal-Bold.ttf"; path = "bored-together/fonts/AirbnbCereal-Bold.ttf"; sourceTree = SOURCE_ROOT; };
+		EB0FD33322B5CACC00BC3C8E /* AirbnbCereal-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "AirbnbCereal-Light.ttf"; path = "bored-together/fonts/AirbnbCereal-Light.ttf"; sourceTree = SOURCE_ROOT; };
+		EB0FD33422B5CACC00BC3C8E /* AirbnbCereal-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "AirbnbCereal-Medium.ttf"; path = "bored-together/fonts/AirbnbCereal-Medium.ttf"; sourceTree = SOURCE_ROOT; };
+		EB0FD33522B5CACC00BC3C8E /* AirbnbCereal-Book.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "AirbnbCereal-Book.ttf"; path = "bored-together/fonts/AirbnbCereal-Book.ttf"; sourceTree = SOURCE_ROOT; };
+		EB0FD33622B5CACC00BC3C8E /* AirbnbCereal-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "AirbnbCereal-ExtraBold.ttf"; path = "bored-together/fonts/AirbnbCereal-ExtraBold.ttf"; sourceTree = SOURCE_ROOT; };
+		EB0FD33722B5CC3700BC3C8E /* info_border.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = info_border.png; sourceTree = "<group>"; };
+		EB0FD33922B5E8C400BC3C8E /* AgeSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgeSelectionView.swift; sourceTree = "<group>"; };
+		EB0FD34122B5F8B900BC3C8E /* loading.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loading.json; sourceTree = "<group>"; };
+		33DA1EAE22B5B6AD004D28BD /* ActivityCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityCell.swift; sourceTree = "<group>"; };
+		33DA1EB822B5D1AE004D28BD /* ActivityHouse_2.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ActivityHouse_2.storyboard; sourceTree = "<group>"; };
+		33DA1EBA22B5D1DA004D28BD /* ActivityTableView_2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityTableView_2.swift; sourceTree = "<group>"; };
+		33DA1EBC22B5D6F5004D28BD /* DesignView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignView.swift; sourceTree = "<group>"; };
+		33DA1EBE22B5DFE6004D28BD /* AirbnbCereal-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AirbnbCereal-Medium.ttf"; sourceTree = "<group>"; };
+		33DA1EBF22B5DFE6004D28BD /* AirbnbCereal-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AirbnbCereal-Black.ttf"; sourceTree = "<group>"; };
+		33DA1EC022B5DFE6004D28BD /* AirbnbCereal-Book.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AirbnbCereal-Book.ttf"; sourceTree = "<group>"; };
+		33DA1EC122B5DFE6004D28BD /* AirbnbCereal-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AirbnbCereal-Bold.ttf"; sourceTree = "<group>"; };
+		33DA1EC222B5DFE6004D28BD /* AirbnbCereal-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AirbnbCereal-ExtraBold.ttf"; sourceTree = "<group>"; };
+		33DA1EC322B5DFE6004D28BD /* AirbnbCereal-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AirbnbCereal-Light.ttf"; sourceTree = "<group>"; };
 		38184EE1DABD9FF96C1C3334 /* Pods-bored-together.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bored-together.release.xcconfig"; path = "Target Support Files/Pods-bored-together/Pods-bored-together.release.xcconfig"; sourceTree = "<group>"; };
 		55DE25BBEC35CBB74CCD05F2 /* Pods_bored_together.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_bored_together.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB2D59B122B539C80014669B /* bored-together.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "bored-together.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -43,7 +88,6 @@
 		EB2D59BE22B539CA0014669B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EB2D59C022B539CA0014669B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EB2D59E922B58DB60014669B /* MainApp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainApp.storyboard; sourceTree = "<group>"; };
-		EB2D59EB22B58DC50014669B /* CardSwipeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSwipeView.swift; sourceTree = "<group>"; };
 		EB2D59EE22B58E2A0014669B /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
 		EB2D59F022B58E400014669B /* SPageThree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPageThree.swift; sourceTree = "<group>"; };
 		EB2D59F222B58E530014669B /* SPageTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPageTwo.swift; sourceTree = "<group>"; };
@@ -56,6 +100,13 @@
 		EB2D5A0622B5A3540014669B /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 		EB2D5A0822B5A35F0014669B /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		EB2D5A0A22B5A3920014669B /* ActivityTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityTableView.swift; sourceTree = "<group>"; };
+		EB2D5A0C22B5A6B00014669B /* UIExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIExtensions.swift; sourceTree = "<group>"; };
+		EB2D5A0E22B5A8660014669B /* plus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plus.png; sourceTree = "<group>"; };
+		EB2D5A1022B5ABC40014669B /* MainSelectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSelectView.swift; sourceTree = "<group>"; };
+		EB2D5A1222B5AF770014669B /* CardView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardView.xib; sourceTree = "<group>"; };
+		EB2D5A1522B5AFE90014669B /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		EB2D5A1B22B5C6530014669B /* x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = x.png; sourceTree = "<group>"; };
+		EB2D5A1D22B5C6590014669B /* heart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = heart.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,26 +114,55 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				55A00B114722C8BD8B7AB0E7 /* Pods_bored_together.framework in Frameworks */,
+				03D44D40BAA1956E99D4F0F7 /* Pods_bored_together.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		26FE3D2C3DF30427C711A237 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3136664A8B48B7461E59B94B /* Pods_bored_together.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		33C3282722B549A500103D44 /* fonts */ = {
 			isa = PBXGroup;
 			children = (
+				EB0FD33122B5CACC00BC3C8E /* AirbnbCereal-Black.ttf */,
+				EB0FD33222B5CACC00BC3C8E /* AirbnbCereal-Bold.ttf */,
+				EB0FD33522B5CACC00BC3C8E /* AirbnbCereal-Book.ttf */,
+				EB0FD33622B5CACC00BC3C8E /* AirbnbCereal-ExtraBold.ttf */,
+				EB0FD33322B5CACC00BC3C8E /* AirbnbCereal-Light.ttf */,
+				EB0FD33422B5CACC00BC3C8E /* AirbnbCereal-Medium.ttf */,
+				33DA1EBF22B5DFE6004D28BD /* AirbnbCereal-Black.ttf */,
+				33DA1EC122B5DFE6004D28BD /* AirbnbCereal-Bold.ttf */,
+				33DA1EC022B5DFE6004D28BD /* AirbnbCereal-Book.ttf */,
+				33DA1EC222B5DFE6004D28BD /* AirbnbCereal-ExtraBold.ttf */,
+				33DA1EC322B5DFE6004D28BD /* AirbnbCereal-Light.ttf */,
+				33DA1EBE22B5DFE6004D28BD /* AirbnbCereal-Medium.ttf */,
 			);
 			path = fonts;
 			sourceTree = "<group>";
 			usesTabs = 0;
 		};
+		33DA1EB722B5D18F004D28BD /* NewActivityHouse */ = {
+			isa = PBXGroup;
+			children = (
+				33DA1EB822B5D1AE004D28BD /* ActivityHouse_2.storyboard */,
+				33DA1EBA22B5D1DA004D28BD /* ActivityTableView_2.swift */,
+			);
+			path = NewActivityHouse;
+			sourceTree = "<group>";
+		};
 		9275F098695C673BFB36D3B8 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				28CEC85C13CFE5F620428404 /* Pods-bored-together.debug.xcconfig */,
-				38184EE1DABD9FF96C1C3334 /* Pods-bored-together.release.xcconfig */,
+				244D32F7222F1B6CC7F43844 /* Pods-bored-together.debug.xcconfig */,
+				0DA484F655B57A260A5D1644 /* Pods-bored-together.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -93,7 +173,7 @@
 				EB2D59B322B539C80014669B /* bored-together */,
 				EB2D59B222B539C80014669B /* Products */,
 				9275F098695C673BFB36D3B8 /* Pods */,
-				ECBD5DA68ED085FC34BB5D4C /* Frameworks */,
+				26FE3D2C3DF30427C711A237 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -108,13 +188,15 @@
 		EB2D59B322B539C80014669B /* bored-together */ = {
 			isa = PBXGroup;
 			children = (
+				33DA1EB722B5D18F004D28BD /* NewActivityHouse */,
 				EB2D59FE22B58FA80014669B /* GoogleService-Info.plist */,
-				EB2D59E822B58D4C0014669B /* Main */,
 				EB2D59E722B58D2D0014669B /* Splash */,
+				EB2D59E822B58D4C0014669B /* Main */,
 				33C3282722B549A500103D44 /* fonts */,
 				EB2D59B422B539C80014669B /* AppDelegate.swift */,
 				EB2D59B622B539C80014669B /* ViewController.swift */,
 				EB2D59BB22B539CA0014669B /* Assets.xcassets */,
+				EB2D5A0E22B5A8660014669B /* plus.png */,
 				EB2D59BD22B539CA0014669B /* LaunchScreen.storyboard */,
 				EB2D59C022B539CA0014669B /* Info.plist */,
 			);
@@ -126,6 +208,7 @@
 			children = (
 				EB2D59B822B539C80014669B /* Main.storyboard */,
 				33C3283422B553E900103D44 /* GenderSelectionView.swift */,
+				EB0FD33922B5E8C400BC3C8E /* AgeSelectionView.swift */,
 				EB2D59ED22B58E130014669B /* PageView */,
 			);
 			path = Splash;
@@ -134,8 +217,8 @@
 		EB2D59E822B58D4C0014669B /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				EB2D59E922B58DB60014669B /* MainApp.storyboard */,
-				EB2D59EB22B58DC50014669B /* CardSwipeView.swift */,
+				EB2D5A0C22B5A6B00014669B /* UIExtensions.swift */,
+				EB2D5A1422B5AFB90014669B /* SwipeView */,
 				EB2D5A0322B5A3330014669B /* ActivityHouse */,
 				EB2D5A0222B5A3240014669B /* Profile */,
 			);
@@ -147,24 +230,17 @@
 			children = (
 				EB2D59EE22B58E2A0014669B /* PageViewController.swift */,
 				EB2D59FD22B58ECC0014669B /* Pages */,
-				EB2D59FC22B58EBC0014669B /* animations */,
 			);
 			path = PageView;
-			sourceTree = "<group>";
-		};
-		EB2D59FC22B58EBC0014669B /* animations */ = {
-			isa = PBXGroup;
-			children = (
-				EB2D59F622B58E850014669B /* location_a.json */,
-				EB2D59F822B58E9A0014669B /* location_b.json */,
-				EB2D59FA22B58EAB0014669B /* location_c.json */,
-			);
-			path = animations;
 			sourceTree = "<group>";
 		};
 		EB2D59FD22B58ECC0014669B /* Pages */ = {
 			isa = PBXGroup;
 			children = (
+				EB0FD34122B5F8B900BC3C8E /* loading.json */,
+				EB2D59F622B58E850014669B /* location_a.json */,
+				EB2D59F822B58E9A0014669B /* location_b.json */,
+				EB2D59FA22B58EAB0014669B /* location_c.json */,
 				EB2D59F422B58E630014669B /* SPageOne.swift */,
 				EB2D59F222B58E530014669B /* SPageTwo.swift */,
 				EB2D59F022B58E400014669B /* SPageThree.swift */,
@@ -186,16 +262,26 @@
 			children = (
 				EB2D5A0422B5A34A0014669B /* ActivityHouse.storyboard */,
 				EB2D5A0A22B5A3920014669B /* ActivityTableView.swift */,
+				33DA1EAE22B5B6AD004D28BD /* ActivityCell.swift */,
+				33DA1EBC22B5D6F5004D28BD /* DesignView.swift */,
 			);
 			path = ActivityHouse;
 			sourceTree = "<group>";
 		};
-		ECBD5DA68ED085FC34BB5D4C /* Frameworks */ = {
+		EB2D5A1422B5AFB90014669B /* SwipeView */ = {
 			isa = PBXGroup;
 			children = (
-				55DE25BBEC35CBB74CCD05F2 /* Pods_bored_together.framework */,
+				EB0FD33722B5CC3700BC3C8E /* info_border.png */,
+				EB0FD32F22B5CA2D00BC3C8E /* backpacking.jpg */,
+				EB0FD32D22B5C79300BC3C8E /* add_activity.png */,
+				EB2D5A1D22B5C6590014669B /* heart.png */,
+				EB2D5A1B22B5C6530014669B /* x.png */,
+				EB2D59E922B58DB60014669B /* MainApp.storyboard */,
+				EB2D5A1222B5AF770014669B /* CardView.xib */,
+				EB2D5A1022B5ABC40014669B /* MainSelectView.swift */,
+				EB2D5A1522B5AFE90014669B /* CardView.swift */,
 			);
-			name = Frameworks;
+			path = SwipeView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -205,11 +291,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EB2D59C322B539CA0014669B /* Build configuration list for PBXNativeTarget "bored-together" */;
 			buildPhases = (
-				71F4C4BB5F8516BFE2DC123B /* [CP] Check Pods Manifest.lock */,
+				8D779EEE6A140DAF641BFFFA /* [CP] Check Pods Manifest.lock */,
 				EB2D59AD22B539C80014669B /* Sources */,
 				EB2D59AE22B539C80014669B /* Frameworks */,
 				EB2D59AF22B539C80014669B /* Resources */,
-				FD4FE3417C95B9A9A89C7B3C /* [CP] Embed Pods Frameworks */,
+				31424468FAAFAF01D9D89B60 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -259,41 +345,34 @@
 			buildActionMask = 2147483647;
 			files = (
 				EB2D59BF22B539CA0014669B /* LaunchScreen.storyboard in Resources */,
+				EB0FD33C22B5F7BC00BC3C8E /* AirbnbCereal-Light.ttf in Resources */,
 				EB2D59EA22B58DB60014669B /* MainApp.storyboard in Resources */,
+				EB0FD33B22B5F7BA00BC3C8E /* AirbnbCereal-Medium.ttf in Resources */,
 				EB2D59BC22B539CA0014669B /* Assets.xcassets in Resources */,
 				EB2D59FF22B58FA80014669B /* GoogleService-Info.plist in Resources */,
+				EB2D5A1C22B5C6540014669B /* x.png in Resources */,
 				EB2D5A0522B5A34A0014669B /* ActivityHouse.storyboard in Resources */,
 				EB2D5A0722B5A3540014669B /* Profile.storyboard in Resources */,
+				EB2D5A1E22B5C6590014669B /* heart.png in Resources */,
+				EB0FD34022B5F7C700BC3C8E /* AirbnbCereal-Black.ttf in Resources */,
+				EB0FD33D22B5F7C100BC3C8E /* AirbnbCereal-ExtraBold.ttf in Resources */,
+				EB0FD33E22B5F7C300BC3C8E /* AirbnbCereal-Book.ttf in Resources */,
+				33DA1EB922B5D1AE004D28BD /* ActivityHouse_2.storyboard in Resources */,
 				EB2D59BA22B539C80014669B /* Main.storyboard in Resources */,
+				EB2D5A0F22B5A8670014669B /* plus.png in Resources */,
+				EB2D5A1322B5AF770014669B /* CardView.xib in Resources */,
+				EB0FD33822B5CC3800BC3C8E /* info_border.png in Resources */,
+				EB0FD32E22B5C79400BC3C8E /* add_activity.png in Resources */,
+				EB0FD34222B5F8B900BC3C8E /* loading.json in Resources */,
+				EB0FD33022B5CA2D00BC3C8E /* backpacking.jpg in Resources */,
+				EB0FD33F22B5F7C400BC3C8E /* AirbnbCereal-Bold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		71F4C4BB5F8516BFE2DC123B /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-bored-together-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		FD4FE3417C95B9A9A89C7B3C /* [CP] Embed Pods Frameworks */ = {
+		31424468FAAFAF01D9D89B60 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -335,6 +414,28 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-bored-together/Pods-bored-together-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		8D779EEE6A140DAF641BFFFA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-bored-together-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -343,18 +444,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				EB2D59F322B58E530014669B /* SPageTwo.swift in Sources */,
+				EB2D5A0D22B5A6B00014669B /* UIExtensions.swift in Sources */,
 				33C3283522B553E900103D44 /* GenderSelectionView.swift in Sources */,
 				EB2D59EF22B58E2A0014669B /* PageViewController.swift in Sources */,
 				EB2D59F922B58E9A0014669B /* location_b.json in Sources */,
 				EB2D5A0B22B5A3920014669B /* ActivityTableView.swift in Sources */,
 				EB2D5A0922B5A35F0014669B /* ProfileView.swift in Sources */,
 				EB2D59FB22B58EAB0014669B /* location_c.json in Sources */,
+				33DA1EBD22B5D6F5004D28BD /* DesignView.swift in Sources */,
 				EB2D59F522B58E630014669B /* SPageOne.swift in Sources */,
 				EB2D59B722B539C80014669B /* ViewController.swift in Sources */,
+				33DA1EAF22B5B6AD004D28BD /* ActivityCell.swift in Sources */,
 				EB2D59F122B58E400014669B /* SPageThree.swift in Sources */,
 				EB2D59B522B539C80014669B /* AppDelegate.swift in Sources */,
-				EB2D59EC22B58DC50014669B /* CardSwipeView.swift in Sources */,
+				EB2D5A1122B5ABC40014669B /* MainSelectView.swift in Sources */,
+				EB2D5A1622B5AFE90014669B /* CardView.swift in Sources */,
+				33DA1EBB22B5D1DA004D28BD /* ActivityTableView_2.swift in Sources */,
 				EB2D59F722B58E850014669B /* location_a.json in Sources */,
+				EB0FD33A22B5E8C400BC3C8E /* AgeSelectionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -498,7 +605,7 @@
 		};
 		EB2D59C422B539CA0014669B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 28CEC85C13CFE5F620428404 /* Pods-bored-together.debug.xcconfig */;
+			baseConfigurationReference = 244D32F7222F1B6CC7F43844 /* Pods-bored-together.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -517,7 +624,7 @@
 		};
 		EB2D59C522B539CA0014669B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 38184EE1DABD9FF96C1C3334 /* Pods-bored-together.release.xcconfig */;
+			baseConfigurationReference = 0DA484F655B57A260A5D1644 /* Pods-bored-together.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

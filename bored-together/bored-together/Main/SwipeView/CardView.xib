@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="AirbnbCereal-Book.ttf">
+            <string>AirbnbCerealApp-Book</string>
+        </array>
+        <array key="AirbnbCereal-ExtraBold.ttf">
+            <string>AirbnbCerealApp-ExtraBold</string>
+        </array>
+        <array key="AirbnbCereal-Medium.ttf">
+            <string>AirbnbCerealApp-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CardView" customModule="bored_together" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="iN0-l3-epB" id="gjj-id-LPy"/>
+                <outlet property="newContainerView" destination="sST-Rv-jty" id="fWG-Zu-49O"/>
+                <outlet property="newContentView" destination="45o-Zy-MoZ" id="Ec2-vN-bfr"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="45o-Zy-MoZ">
+                    <rect key="frame" x="0.0" y="44" width="414" height="556"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backpacking.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="NZw-C3-eU3">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="446"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="446" id="K1Z-7O-orZ"/>
+                            </constraints>
+                        </imageView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sST-Rv-jty">
+                            <rect key="frame" x="0.0" y="446" width="414" height="110"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Backpacking " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bP3-5m-jS1">
+                                    <rect key="frame" x="8" y="8" width="183" height="40"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="40" id="JOm-hC-UC6"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="AirbnbCerealApp-ExtraBold" family="Airbnb Cereal App" pointSize="30"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="45 people going" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NJw-CI-aA6">
+                                    <rect key="frame" x="8" y="76" width="123" height="23"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="23" id="ggH-ZE-txa"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="AirbnbCerealApp-Book" family="Airbnb Cereal App" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Buffalo, NY" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hD5-kJ-JgJ">
+                                    <rect key="frame" x="8" y="51" width="86.5" height="23"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="23" id="Xot-sK-c5k"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="AirbnbCerealApp-Medium" family="Airbnb Cereal App" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eB5-cn-dTL">
+                                    <rect key="frame" x="366" y="42" width="40" height="41"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="40" id="hP6-74-yNf"/>
+                                    </constraints>
+                                    <state key="normal" image="info_border.png"/>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" red="0.0" green="0.50196078430000002" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstItem="bP3-5m-jS1" firstAttribute="top" secondItem="sST-Rv-jty" secondAttribute="top" constant="8" id="6LG-eb-Qor"/>
+                                <constraint firstItem="hD5-kJ-JgJ" firstAttribute="top" secondItem="bP3-5m-jS1" secondAttribute="bottom" constant="3" id="D7M-fy-vXU"/>
+                                <constraint firstItem="hD5-kJ-JgJ" firstAttribute="leading" secondItem="sST-Rv-jty" secondAttribute="leading" constant="8" id="Gwq-Se-Kl1"/>
+                                <constraint firstItem="eB5-cn-dTL" firstAttribute="top" secondItem="sST-Rv-jty" secondAttribute="top" constant="42" id="LV4-2U-zRc"/>
+                                <constraint firstAttribute="bottom" secondItem="NJw-CI-aA6" secondAttribute="bottom" constant="11" id="NNn-Si-DT8"/>
+                                <constraint firstItem="eB5-cn-dTL" firstAttribute="trailing" secondItem="sST-Rv-jty" secondAttribute="trailingMargin" id="Prw-Rw-u0f"/>
+                                <constraint firstItem="eB5-cn-dTL" firstAttribute="centerY" secondItem="hD5-kJ-JgJ" secondAttribute="centerY" id="aE6-zC-Alw"/>
+                                <constraint firstAttribute="height" constant="110" id="qMA-c6-FMi"/>
+                                <constraint firstItem="bP3-5m-jS1" firstAttribute="leading" secondItem="sST-Rv-jty" secondAttribute="leading" constant="8" id="wEm-R5-WOd"/>
+                                <constraint firstItem="NJw-CI-aA6" firstAttribute="leading" secondItem="sST-Rv-jty" secondAttribute="leading" constant="8" id="yjF-50-PaR"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="sST-Rv-jty" secondAttribute="bottom" id="Fsf-Ej-mng"/>
+                        <constraint firstItem="sST-Rv-jty" firstAttribute="top" secondItem="45o-Zy-MoZ" secondAttribute="top" constant="446" id="M3i-Ch-aMX"/>
+                        <constraint firstAttribute="trailing" secondItem="NZw-C3-eU3" secondAttribute="trailing" id="U9Z-lw-b5V"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="556" id="kXj-4p-Vnc"/>
+                        <constraint firstItem="sST-Rv-jty" firstAttribute="leading" secondItem="45o-Zy-MoZ" secondAttribute="leading" id="o98-TN-uIs"/>
+                        <constraint firstItem="NZw-C3-eU3" firstAttribute="top" secondItem="45o-Zy-MoZ" secondAttribute="top" id="pXl-jh-yI1"/>
+                        <constraint firstItem="NZw-C3-eU3" firstAttribute="leading" secondItem="45o-Zy-MoZ" secondAttribute="leading" id="vMi-Xw-hDA"/>
+                        <constraint firstAttribute="trailing" secondItem="sST-Rv-jty" secondAttribute="trailing" id="znT-rt-Yu8"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="45o-Zy-MoZ" secondAttribute="trailing" id="FdK-Hx-y85"/>
+                <constraint firstItem="45o-Zy-MoZ" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="bCq-Xd-BLw"/>
+                <constraint firstItem="45o-Zy-MoZ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="eeH-CT-XYv"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="-584.05797101449275" y="-294.64285714285711"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="backpacking.jpg" width="4000" height="2667"/>
+        <image name="info_border.png" width="75" height="75"/>
+    </resources>
+</document>

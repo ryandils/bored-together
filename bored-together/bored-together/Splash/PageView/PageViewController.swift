@@ -43,8 +43,7 @@ class PageViewController: UIPageViewController, UIPageViewControllerDelegate, UI
     //    }
   }
   
-  override func viewDidAppear(_ animated: Bool) {
-    
+  override func viewWillLayoutSubviews() {
     // 255, 35
     
     facebook_button = UIButton(frame: CGRect(x: 0, y: (self.view.frame.maxY - self.view.frame.maxY/7), width: 265, height: 45))
@@ -98,15 +97,23 @@ class PageViewController: UIPageViewController, UIPageViewControllerDelegate, UI
                     print("id: \(id)")
                   }
                   if let email : NSString = (result! as AnyObject).value(forKey: "email") as? NSString {
-                    print("email: \(email)")
+                    print("email: \(email)" )
                   }
-                  print("PERFORMING SEGUE")
+                  
                   self.performSegue(withIdentifier: "to_main_app", sender: self)
+                  
+                  let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+                  let genderSelectionView = storyboard.instantiateViewController(withIdentifier: "GenderSelectionView") as! GenderSelectionView
+                  self.present(genderSelectionView, animated: true, completion: nil)
                 }
               })
             }
           }
         }
+      } else {
+        let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let genderSelectionView = storyboard.instantiateViewController(withIdentifier: "GenderSelectionView") as! GenderSelectionView
+        self.present(genderSelectionView, animated: true, completion: nil)
       }
     })
     
@@ -126,7 +133,7 @@ class PageViewController: UIPageViewController, UIPageViewControllerDelegate, UI
   // MARK: Delegate functions
   func pageViewController(_ pageViewController: UIPageViewController, didFinishAnimating finished: Bool, previousViewControllers: [UIViewController], transitionCompleted completed: Bool) {
     let pageContentViewController = pageViewController.viewControllers![0]
-    self.pageControl.currentPage = orderedViewControllers.index(of: pageContentViewController)!
+    self.pageControl.currentPage = orderedViewControllers.firstIndex(of: pageContentViewController)!
   }
   
   func newVc(viewController: String) -> UIViewController {
@@ -141,7 +148,7 @@ class PageViewController: UIPageViewController, UIPageViewControllerDelegate, UI
   
   
   func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
-    guard let viewControllerIndex = orderedViewControllers.index(of: viewController) else {
+    guard let viewControllerIndex = orderedViewControllers.firstIndex(of: viewController) else {
       return nil
     }
     
@@ -163,7 +170,7 @@ class PageViewController: UIPageViewController, UIPageViewControllerDelegate, UI
   }
   
   func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController? {
-    guard let viewControllerIndex = orderedViewControllers.index(of: viewController) else {
+    guard let viewControllerIndex = orderedViewControllers.firstIndex(of: viewController) else {
       return nil
     }
     
