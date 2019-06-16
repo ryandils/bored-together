@@ -5,10 +5,18 @@ import { schema as Activity, resolvers as activityResolvers } from './activity'
 const RootQuery = gql`
 	type Query {
 		user: User
-		activeActivity: Activity
-		activity(id: ID!): Activity
 		generatedActivities: [GeneratedActivity]
+		generatedActivity: Activity
 	}
+
+	type Mutation {
+		createUser(user: UserInput!): SuccessResponse
+	}
+
+	type SuccessResponse {
+		success: Boolean
+	}
+
 `
 
 const resolvers = {}

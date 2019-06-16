@@ -8,10 +8,26 @@ const BASE_URL = '/'
 const createUser = async (user) => {
 	const endpoint = 'create-user'
 	const url = `${BASE_URL}${endpoint}`
+	const data = {
+		user_id: user.id,
+		email_address: user.email,
+		facebook_token: user.facebookToken,
+		first_name: user.firstName,
+		last_name: user.lastName,
+		dob: user.dob,
+		gender: user.gender,
+		profile_picture_url: user.profilePictureUrl
+	}
 	try {
-		await axios.post(url, user )
+		await axios.post(url, data )
+		return {
+			success: true
+		}
 	} catch (err) {
 		console.log(err)
+		return {
+			success: false
+		}
 	}
 }
 
@@ -19,7 +35,7 @@ const userExists = async (email) => {
 	const endpoint = '/user-exists'
 	const url = `${BASE_URL}${endpoint}`
 	try {
-		await axios.post(url, { email })
+		await axios.get(url, { email })
 	} catch (err) {
 		console.log(err)
 	}
@@ -30,7 +46,7 @@ const login = async (email) => {
 	const endpoint = '/user-id'
 	const url = `${BASE_URL}${endpoint}`
 	try {
-		await axios.post(url, { email })
+		await axios.get(url, { email })
 	} catch (err) {
 		console.log(err)
 	}
@@ -39,8 +55,9 @@ const login = async (email) => {
 /* ********************************************************************************************* */
 /* ACTIVITY */
 
-const getActivity = async (id) => {
-	// TODO
+/* Pick activity randomly out of list of activities */
+const _chooseActivity = (activities) => {
+	return activity = activities[Math.floor(Math.random() * items.length)]
 }
 
 /* Get a randomly selected active activity */
@@ -48,27 +65,37 @@ const getActiveActivity = async () => {
 	// Grab activities
 	const endpoint = '/get-active-activities'
 	const url = `${BASE_URL}${endpoint}`
+	let activities = []
 	try {
-		await axios.post(url)
+		activities = await axios.get(url)
 	} catch (err) {
 		console.log(err)
 	}
 
 	// Pick activity at random
-	// return _chooseActivity(activities)
-}
-
-/* Pick activity randomly out of list of activities */
-const _chooseActivity = (activities) => {
-	return activity = activities[Math.floor(Math.random() * items.length)]
+	return _chooseActivity(activities)
 }
 
 /* Create activity in database */
 const createActivity = async (activity) => {
 	const endpoint = '/create-activity'
 	const url = `${BASE_URL}${endpoint}`
+	const data = {
+		activity_id: activity.id,
+		host_id: activity.hostId,
+		name: activity.name,
+		accessibility: activity.accessibility,
+		activity_type: activity.activityType,
+		participant_amount: activity.participantAmount,
+		price: activity.price,
+		link: activity.link,
+		activity_key: activity.key,
+		loc: activity.location,
+		timestp: activity.timestamp,
+		active: activity.active
+	}
 	try {
-		await axios.post(url, { activity })
+		await axios.post(url, data)
 	} catch (err) {
 		console.log(err)
 	}
@@ -95,11 +122,11 @@ const joinActivity = async (userId, activityId) => {
 }
 
 /* Set the activity to be closed, so it can no longer be joined */
-const _closeActivity = async () => {
+const _closeActivity = async (activity_Id) => {
 	const endpoint = '/deactivate-activity'
 	const url = `${BASE_URL}${endpoint}`
 	try {
-		await axios.post(url, { email })
+		await axios.post(url, { activity_Id })
 	} catch (err) {
 		console.log(err)
 	}
@@ -116,12 +143,11 @@ const getUsersById = async (ids) => {
 	// TODO
 }
 
-export const bigQueryAPI = {
+export const flaskAPI = {
 	createUser,
 	userExists,
 	login,
 	getActiveActivity,
-	getActivity,
 	createActivity,
 	joinActivity,
 }

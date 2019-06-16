@@ -1,12 +1,13 @@
 import { gql } from 'apollo-server'
 import casual from 'casual'
 import moment from 'moment'
-import { boredAPI, bigQueryAPI } from '../datasources'
+import { boredAPI } from '../datasources'
 
 export const schema = gql`
 	type Activity {
 		id: ID!
 		hostId: ID!
+		## YEET
 		name: String!
 		accessibility: Float
 		activityType: String
@@ -14,9 +15,10 @@ export const schema = gql`
 		price: Float
 		link: String
 		key: ID
+		## YEET
 		location: String
 		timestamp: String
-		users: [User!]
+		active: Boolean
 	}
 
 	type GeneratedActivity {
@@ -32,9 +34,16 @@ export const schema = gql`
 
 export const resolvers = {
 	Query: {
-		activity: (_, { id }) => bigQueryAPI.getActivity(id),
-		activeActivity: () => bigQueryAPI.getActiveActivities(),
-		generatedActivities: () => boredAPI.generateActivities()
+		generatedActivities: () => boredAPI.generateActivities(),
+		generatedActivity: async () => {
+			const generated = await boredAPI.generateActivity()
+			const activity = generated
+			activity.id = casual.uuid
+			activity.hostId = casual.uuid
+			activity.location = casual.city
+			activity.timestamp = moment()
+			return activity
+		}
 	}
 }
 

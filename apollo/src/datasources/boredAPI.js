@@ -17,6 +17,17 @@ const generateActivities = async (count = 4) => {
 	return activities
 }
 
+const generateActivity = async () => {
+	const baseUrl = 'http://www.boredapi.com/api/activity?'
+	const resp = await axios.get(`${baseUrl}`)
+	const data = resp.data
+	data.name = data.activity
+	data.activityType = data.type
+	data.participantAmount = data.participants
+	return data
+}
+
 export const boredAPI = {
-	generateActivities
+	generateActivities,
+	generateActivity
 }
