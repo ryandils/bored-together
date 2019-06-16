@@ -33,7 +33,7 @@
         <!--sOne-->
         <scene sceneID="VyG-DQ-rzt">
             <objects>
-                <viewController storyboardIdentifier="sOne" title="sOne" id="ojP-9M-ZkY" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="sOne" title="sOne" id="ojP-9M-ZkY" customClass="SPageOne" customModule="bored_together" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Uyg-xy-YIM">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -186,7 +186,7 @@
         <!--sTwo-->
         <scene sceneID="oZ6-eM-8qC">
             <objects>
-                <viewController storyboardIdentifier="sTwo" title="sTwo" id="yU0-pi-kfG" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="sTwo" title="sTwo" id="yU0-pi-kfG" customClass="SPageTwo" customModule="bored_together" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="INI-Ad-zZ8">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -201,7 +201,7 @@
         <!--sThree-->
         <scene sceneID="Cyk-RC-4dJ">
             <objects>
-                <viewController storyboardIdentifier="sThree" title="sThree" id="Lp7-2t-jLs" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="sThree" title="sThree" id="Lp7-2t-jLs" customClass="SPageThree" customModule="bored_together" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3zZ-63-FbG">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

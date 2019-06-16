@@ -46,7 +46,7 @@
                             <rect key="frame" x="0.0" y="446" width="414" height="110"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Backpacking " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bP3-5m-jS1">
-                                    <rect key="frame" x="8" y="8" width="195" height="40"/>
+                                    <rect key="frame" x="8" y="8" width="183" height="40"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="40" id="JOm-hC-UC6"/>
                                     </constraints>
@@ -55,7 +55,7 @@
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="45 people going" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NJw-CI-aA6">
-                                    <rect key="frame" x="8" y="76" width="126" height="23"/>
+                                    <rect key="frame" x="8" y="76" width="123" height="23"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="23" id="ggH-ZE-txa"/>
                                     </constraints>
@@ -64,7 +64,7 @@
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Buffalo, NY" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hD5-kJ-JgJ">
-                                    <rect key="frame" x="8" y="51" width="88" height="23"/>
+                                    <rect key="frame" x="8" y="51" width="86.5" height="23"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="23" id="Xot-sK-c5k"/>
                                     </constraints>
@@ -80,7 +80,7 @@
                                     <state key="normal" image="info_border.png"/>
                                 </button>
                             </subviews>
-                            <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="backgroundColor" red="0.0" green="0.50196078430000002" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
                             <constraints>
                                 <constraint firstItem="bP3-5m-jS1" firstAttribute="top" secondItem="sST-Rv-jty" secondAttribute="top" constant="8" id="6LG-eb-Qor"/>
                                 <constraint firstItem="hD5-kJ-JgJ" firstAttribute="top" secondItem="bP3-5m-jS1" secondAttribute="bottom" constant="3" id="D7M-fy-vXU"/>

@@ -21,7 +21,7 @@ class SPageOne: UIViewController {
     title.center.x = view.center.x
     
     title.textAlignment = .center
-    title.text = "Welcome to Cachr!"
+    title.text = "Are you bored, and willing to go on an adventure?"
     
     guard let customFont = UIFont(name: "AirbnbCerealApp-Medium", size: 16) else {
       fatalError("""
@@ -39,11 +39,26 @@ class SPageOne: UIViewController {
     
     let body = UILabel(frame: CGRect(x: 0, y: 0, width: self.view.frame.maxX - self.view.frame.maxX/8, height: 100))
     //label.center = CGPoint(x: 160, y: 285)
-    body.center.y = view.center.y + self.view.frame.maxY/7
+    body.center.y = view.center.y + self.view.frame.maxY/6
     body.center.x = view.center.x
     
     body.textAlignment = .center
-    body.text = "Interact with your surroundings like never before."
+    body.text = "With BeTogether you can interact with people in your area by doing fun and crazy activites. Wanna go on a hike, or learn pottery? Let's get started!"
+    
+    let attributedString = NSMutableAttributedString(string: body.text!)
+    
+    
+    // *** Create instance of `NSMutableParagraphStyle`
+    let paragraphStyle = NSMutableParagraphStyle()
+    
+    // *** set LineSpacing property in points ***
+    paragraphStyle.lineSpacing = 2 // Whatever line spacing you want in points
+    
+    // *** Apply attribute to string ***
+    attributedString.addAttribute(NSAttributedString.Key.paragraphStyle, value:paragraphStyle, range:NSMakeRange(0, attributedString.length))
+    
+    // *** Set Attributed String to your label ***
+    body.attributedText = attributedString
     
     guard let customBodyFont = UIFont(name: "AirbnbCerealApp-Light", size: 16) else {
       fatalError("""
@@ -59,7 +74,7 @@ class SPageOne: UIViewController {
     
     
     //load earth lottie animation
-    if let animationView:AnimationView = AnimationView(name: "location_b") {
+    if let animationView:AnimationView = AnimationView(name: "loading") {
       animationView.frame = CGRect(x: 0, y: 0, width: 300, height: 300)
       
       // label.center.y = view.center.y
