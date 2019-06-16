@@ -81,6 +81,14 @@
             </objects>
             <point key="canvasLocation" x="-433.33333333333337" y="84.375"/>
         </scene>
+        <!--ActivityHouse-->
+        <scene sceneID="Cor-Rn-GPJ">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="ActivityHouse" storyboardName="ActivityHouse" id="Bb1-2u-LTR" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5yp-oR-nv7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="212" y="-163"/>
+        </scene>
     </scenes>
     <resources>
         <image name="add_activity.png" width="96" height="96"/>

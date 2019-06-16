@@ -1,27 +1,21 @@
 import { ApolloServer, gql } from 'apollo-server'
+import { schema as User, resolvers as userResolvers } from './user'
+import { schema as Activity, resolvers as activityResolvers } from './activity'
 
-const typeDef = gql`
+const RootQuery = gql`
 	type Query {
 		user: User
-	}
-
-	type User {
-		name: String
+		activity: Activity
 	}
 `
 
-const resolvers = {
-	Query: {
-		user: () => { return ({ name: 'Jeb' }) }
-	}
-}
+const resolvers = {}
 
 const server = new ApolloServer({
-	typeDefs: typeDef,
-	resolvers
+	typeDefs: [RootQuery, User, Activity],
+	resolvers: [resolvers, userResolvers, activityResolvers]
 })
 
 server.listen().then(({ url }) => {
 	console.log(`🚀 Server ready at ${url}`)
 })
-

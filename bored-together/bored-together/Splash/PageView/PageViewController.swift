@@ -97,7 +97,7 @@ class PageViewController: UIPageViewController, UIPageViewControllerDelegate, UI
                     print("id: \(id)")
                   }
                   if let email : NSString = (result! as AnyObject).value(forKey: "email") as? NSString {
-                    print("email: \(email)")
+                    print("email: \(email)" )
                   }
                   
                   self.performSegue(withIdentifier: "to_main_app", sender: self)
@@ -105,7 +105,6 @@ class PageViewController: UIPageViewController, UIPageViewControllerDelegate, UI
                   let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
                   let genderSelectionView = storyboard.instantiateViewController(withIdentifier: "GenderSelectionView") as! GenderSelectionView
                   self.present(genderSelectionView, animated: true, completion: nil)
-
                 }
               })
             }
