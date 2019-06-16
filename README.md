@@ -1,6 +1,6 @@
 # B(ored) Together
 
-bored-together, or B(ored) Together is an app that allows random people in the same location to connect over similar interests. 
+B(ored) Together is an iOS application that allows random people in the same location to connect over similar interests in a safe and friendly way. 
 
 ## Getting Started
 
@@ -8,49 +8,44 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-What things you need to install the software and how to install them
+#### [NOTE] An Apple computer is required to develop & test  iOS applications.
+_If you don't have the capability to run this iOS application, we have provided a YouTube link [here]()._
 
-```
-Give examples
-```
+If you have an Apple computer, you can start the development process by downloading the latest version of Xcode from the [Apple developer website](https://developer.apple.com/) or the Mac App Store.
 
 ### Installing
 
-A step by step series of examples that tell you how to get a development env running
-
-Say what the step will be
+Once you have Xcode installed, open a terminal of your choice, and run the following command:
 
 ```
-Give the example
+run xcode-select --install
 ```
 
-And repeat
+From here clone the GitHub repository in a desired location on your computer:
 
+HTTPS
 ```
-until finished
+https://github.com/RyChrome/bored-together.git
 ```
-
-End with an example of getting some data out of the system or using it for a little demo
-
-## Running the tests
-
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
-
+SSH
 ```
-Give an example
+git@github.com:RyChrome/bored-together.git
 ```
+After a successful clone of the repository, you should have something like this:
+![this](photos/successful_clone.png)
 
-### And coding style tests
+The repository is structured as a backend and a frontend, with the [bored-together]() directory and the [apollo]() directory representing each one respectively.
 
-Explain what these tests test and why
-
+### Frontend setup 
+To open the XCode project and begin development in the iOS environment do the following:
 ```
-Give an example
+cd bored-together && open bored-together.xcworkspace
 ```
+After this command, you should be introduced to the frontend of our project.
+
+
+### Backend setup 
+To open the backend project
 
 ## Deployment
 
@@ -58,22 +53,32 @@ Add additional notes about how to deploy this on a live system
 
 ## Built With
 
-* [Swift](https://swift.org/documentation/) - iOS stack.
-* [GraphQL](https://graphql.org/) - Query Language for API.
-* [Bored API](http://www.boredapi.com/) - API that we had to use.
+* [Swift](https://swift.org/documentation/) - iOS stack
+* [GraphQL](https://graphql.org/) - Query Language for API
+* [Bored API](http://www.boredapi.com/) - Random API that we had to use
 * [neo4j](https://neo4j.com/) - Graph Database
 
 ## Versioning
 
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
+We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/RyChrome/bored-together/tags). 
 
 ## Authors
 
-* *Ryan Dils* - [RyChrome](https://github.com/RyChrome)
-* *Baily Troyer* - [BailyTroyer](https://github.com/BailyTroyer)
-* *Alexander Stone* - [awstone](https://github.com/awstone)
-* *Dennis Fedorishin* - [denfed](https://github.com/denfed)
-* *Ryan Thomas* - [ryanthomas30](https://github.com/ryanthomas30)
+* *Ryan Dils* - iOS, UI/UX, wannabe rapper - 
+    * [GitHub](https://github.com/RyChrome)
+    * [LinkedIn](https://www.linkedin.com/in/ryanallendils)
+* *Dennis Fedorishin* - iOS, UI/UX - 
+    * [GitHub](https://github.com/RyChrome)
+    * [LinkedIn](https://www.linkedin.com/in/dennis-fedorishin/)
+* *Alexander Stone* - Backend developer - 
+    * [GitHub](https://github.com/RyChrome)
+    * [LinkedIn](https://www.linkedin.com/in/alexanderwstone/)
+* *Ryan Thomas* - Backend developer - 
+    * [GitHub](https://github.com/RyChrome)
+    * [LinkedIn](https://www.linkedin.com/in/ryan-thomas-233711139/)
+* *Baily Troyer* - iOS, UI/UX, Swift guru - 
+    * [GitHub](https://github.com/RyChrome)
+    * [LinkedIn](https://www.linkedin.com/in/bailytroyer/)
 
 ## License
 
