@@ -9,7 +9,20 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="AirbnbCereal-Medium.ttf">
+            <string>AirbnbCerealApp-Medium</string>
+        </array>
+    </customFonts>
     <scenes>
+        <!--Profile-->
+        <scene sceneID="kCB-cg-dxf">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Profile" id="hfe-Er-rHK" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MA9-MP-XHw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1150" y="-45"/>
+        </scene>
         <!--Main Select View-->
         <scene sceneID="F9j-0D-dRm">
             <objects>
@@ -22,15 +35,18 @@
                                 <rect key="frame" x="20" y="44" width="36" height="36"/>
                                 <color key="tintColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" image="profile"/>
+                                <connections>
+                                    <segue destination="hfe-Er-rHK" kind="show" customClass="SegueFromLeft" customModule="bored_together" customModuleProvider="target" id="flr-jA-XSg"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X3U-g9-O12">
                                 <rect key="frame" x="364" y="41" width="30" height="42"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <fontDescription key="fontDescription" name="AirbnbCerealApp-Medium" family="Airbnb Cereal App" pointSize="23"/>
                                 <state key="normal" title="@">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Bb1-2u-LTR" kind="show" id="4oP-pj-06Z"/>
+                                    <segue destination="Bb1-2u-LTR" kind="show" identifier="" customClass="SegueFromRight" customModule="bored_together" customModuleProvider="target" id="Fla-IH-oxw"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DGI-MR-gfM">
@@ -53,6 +69,9 @@
                                 <rect key="frame" x="159" y="761" width="96" height="96"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="add_activity.png"/>
+                                <connections>
+                                    <segue destination="Bb1-2u-LTR" kind="show" identifier="new_activity" id="xRn-7Z-XRb"/>
+                                </connections>
                             </button>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KyX-fD-m9L">
                                 <rect key="frame" x="20" y="123" width="374" height="600"/>
@@ -99,4 +118,7 @@
         <image name="profile" width="36" height="36"/>
         <image name="x.png" width="75" height="75"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="Fla-IH-oxw"/>
+    </inferredMetricsTieBreakers>
 </document>

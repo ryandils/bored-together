@@ -53,7 +53,7 @@ class MainSelectView: UIViewController {
       return customView
       // Programitcally creating content view
 //      if index % 2 != 0 {
-//        return self.programticViewForOverlay(frame: frame, userModel: userModel)
+//        return self.programticViewForOverlapreparey(frame: frame, userModel: userModel)
 //      }
 //        // loading contentview from nib
 //      else{
@@ -64,10 +64,18 @@ class MainSelectView: UIViewController {
 //      }
     }
     
-    
     swipeView = TinderSwipeView<UserModel>(frame: containerView.bounds, contentView: contentView)
     containerView.addSubview(swipeView)
     swipeView.showTinderCards(with: userModels ,isDummyShow: true)
+  }
+  
+  override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    print("---\(segue.identifier)")
+    
+    if segue.identifier == "new_activity" {
+      let viewController:ActivityTableView = segue.destination as! ActivityTableView
+      viewController.showStartSomethingNew = true
+    }
   }
   
   private func programticViewForOverlay(frame:CGRect, userModel:UserModel) -> UIView{
@@ -188,5 +196,49 @@ extension UIView {
   
   func subview<T>(of type: T.Type) -> T? {
     return subviews.compactMap { $0 as? T ?? $0.subview(of: type) }.first
+  }
+}
+
+class SegueFromLeft: UIStoryboardSegue {
+  override func perform() {
+    let src = self.source
+    let dst = self.destination
+    
+    src.view.superview?.insertSubview(dst.view, aboveSubview: src.view)
+    dst.view.transform = CGAffineTransform(translationX: -src.view.frame.size.width, y: 0)
+    
+    UIView.animate(withDuration: 0.25,
+                   delay: 0.0,
+                   options: .curveEaseInOut,
+                   animations: {
+                    dst.view.transform = CGAffineTransform(translationX: 0, y: 0)
+    },
+                   completion: { finished in
+                    src.present(dst, animated: false, completion: nil)
+    }
+    )
+  }
+}
+
+class SegueFromRight: UIStoryboardSegue
+{
+  override func perform()
+  {
+    let src = self.source
+    let dst = self.destination
+    
+    src.view.superview?.insertSubview(dst.view, aboveSubview: src.view)
+    dst.view.transform = CGAffineTransform(translationX: src.view.frame.size.width, y: 0)
+    
+    UIView.animate(withDuration: 0.25,
+                   delay: 0.0,
+                   options: UIView.AnimationOptions.curveEaseInOut,
+                   animations: {
+                    dst.view.transform = CGAffineTransform(translationX: 0, y: 0)
+    },
+                   completion: { finished in
+                    src.present(dst, animated: false, completion: nil)
+    }
+    )
   }
 }

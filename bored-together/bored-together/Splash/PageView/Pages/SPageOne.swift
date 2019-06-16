@@ -23,6 +23,8 @@ class SPageOne: UIViewController {
     title.textAlignment = .center
     title.text = "Are you bored, and willing to go on an adventure?"
     
+    title.textColor = .white
+
     guard let customFont = UIFont(name: "AirbnbCerealApp-Medium", size: 16) else {
       fatalError("""
         Failed to load the "AirbnbCereal-Medium" font.
@@ -44,6 +46,8 @@ class SPageOne: UIViewController {
     
     body.textAlignment = .center
     body.text = "With BeTogether you can interact with people in your area by doing fun and crazy activites. Wanna go on a hike, or learn pottery? Let's get started!"
+    
+    body.textColor = .white
     
     let attributedString = NSMutableAttributedString(string: body.text!)
     
