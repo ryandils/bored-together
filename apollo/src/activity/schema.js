@@ -14,7 +14,7 @@ export const schema = gql`
 		price: Float
 		link: String
 		key: ID
-		location: String!
+		location: String
 		timestamp: String
 		users: [User!]
 	}

@@ -31,8 +31,12 @@ const _chooseActivity = (activities) => {
 }
 
 /* Create activity in database */
-const createActivity = async () => {
-	// TODO
+const createActivity = async (activity) => {
+	const { id, hostId, name, accessibility, activityType, participantAmount, price, link, key, location, timestamp } = activity
+	const query = `
+		INSERT INTO Activities (id, hostId, accessibility, activityType, participantAmount, price, link, key, location, timestamp)
+		VALUES (${id}, ${hostId}, ${name}, ${accessibility}, ${activityType}, ${participantAmount}, ${price}, ${link}, ${key}, ${location}, ${timestamp})
+	`
 }
 
 /* Add user to activity */
