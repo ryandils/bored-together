@@ -20,12 +20,13 @@ class CardView: UIView {
   
   var userModel : UserModel! {
     didSet{
-      
-      if Bool.random() {
-        self.newContainerView.backgroundColor = UIColor(rgb: 0x0080FE)
-      } else {
-        self.newContainerView.backgroundColor = .white
-      }
+
+      self.newContainerView.backgroundColor = .white
+//      if Bool.random() {
+//        self.newContainerView.backgroundColor = UIColor(rgb: 0x0080FE)
+//      } else {
+//        self.newContainerView.backgroundColor = .white
+//      }
       
       // self.labelText.attributedText = self.attributeStringForModel(userModel: userModel)
       // self.imageViewBackground.image = UIImage(named:String(Int(1 + arc4random() % (8 - 1))))

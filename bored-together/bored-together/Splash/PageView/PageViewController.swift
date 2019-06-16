@@ -46,7 +46,7 @@ class PageViewController: UIPageViewController, UIPageViewControllerDelegate, UI
   override func viewWillLayoutSubviews() {
     // 255, 35
     
-    facebook_button = UIButton(frame: CGRect(x: 0, y: (self.view.frame.maxY - self.view.frame.maxY/7), width: 265, height: 45))
+    facebook_button = UIButton(frame: CGRect(x: 0, y: (self.view.frame.maxY - self.view.frame.maxY/6), width: 295, height: 55))
     
     facebook_button.setImage(#imageLiteral(resourceName: "facebook_button_image"), for: .normal)
     

@@ -19,7 +19,11 @@ internal struct activity {
 }
 
 class ActivityTableView: UIViewController, UITableViewDelegate, UITableViewDataSource {
-    @IBOutlet weak var ActivityTableView: UITableView!
+  
+  @IBOutlet weak var ActivityTableView: UITableView!
+  @IBOutlet weak var bottomSpace: NSLayoutConstraint!
+  
+    public var showStartSomethingNew = false
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 2
@@ -57,20 +61,57 @@ class ActivityTableView: UIViewController, UITableViewDelegate, UITableViewDataS
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 135
     }
-    
-    
-    
+  
     var test_activitylist: [activity] = [activity(title: "River Kayaking", location: "Niagara River, NY 14051", minPeople: 2, maxPeople: 5, image: #imageLiteral(resourceName: "KayakinginGLBA"), currentjoined: 3),
                                          activity(title: "Mountain biking", location: "Holiday Valley, NY 14123", minPeople: 3, maxPeople: 10, image: #imageLiteral(resourceName: "Content_Team_080317_61569_Mountain_Biking_Beginners_lg"), currentjoined: 8)]
     
     override func viewDidLoad() {
         super.viewDidLoad()
+      
+      if showStartSomethingNew {
+        print("SHOW SOMETHING NEW")
+      } else {
+        // self.tableViewDistance.constant = 0
+        print("DON'T SHOW SOMETHING NEW")
+        bottomSpace.constant = 0
+      }
         
         
 //        ActivityTableView.separatorColor = UIColor()
         ActivityTableView.dataSource = self
         ActivityTableView.delegate = self
+      
+        let swipeRight = UISwipeGestureRecognizer(target: self, action: #selector(self.respondToSwipeGesture))
+        swipeRight.direction = UISwipeGestureRecognizer.Direction.right
+        self.view.addGestureRecognizer(swipeRight)
         
+    }
+  
+    @objc func respondToSwipeGesture(gesture: UIGestureRecognizer) {
+      if let swipeGesture = gesture as? UISwipeGestureRecognizer {
+        switch swipeGesture.direction {
+        case UISwipeGestureRecognizer.Direction.right:
+          // go back
+          print("going back")
+          self.goBack()
+        default:
+          break
+        }
+      }
+    }
+  
+    private func goBack() {
+        self.performSegue(withIdentifier: "back_to_main", sender: self)
+//      let storyboard: UIStoryboard = UIStoryboard(name: "MainApp", bundle: nil)
+//      let mainSelectView = storyboard.instantiateViewController(withIdentifier: "MainSelectView") as! MainSelectView
+//
+//      let transition = CATransition()
+//      transition.duration = 0.3
+//      transition.type = CATransitionType.push
+//      transition.subtype = CATransitionSubtype.fromLeft
+//      transition.timingFunction = CAMediaTimingFunction(name:CAMediaTimingFunctionName.easeInEaseOut)
+//      view.window!.layer.add(transition, forKey: kCATransition)
+//      present(mainSelectView, animated: false, completion: nil)
     }
     
     override func viewDidAppear(_ animated: Bool) {
