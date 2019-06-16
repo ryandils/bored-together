@@ -10,7 +10,7 @@ import UIKit
 
 import Apollo
 
-let graphQLEndpoint = "http://localhost:4000/graphql"
+let graphQLEndpoint = "http://35.184.77.163:4000/"
 let apollo = ApolloClient(url: URL(string: graphQLEndpoint)!)
 
 @UIApplicationMain
