@@ -101,7 +101,10 @@ class PageViewController: UIPageViewController, UIPageViewControllerDelegate, UI
                     print("email: \(email)")
                   }
                   print("PERFORMING SEGUE")
-                  self.performSegue(withIdentifier: "to_main_app", sender: self)
+                 // self.performSegue(withIdentifier: "to_main_app", sender: self)
+                    let storyBoard: UIStoryboard = UIStoryboard(name: "Profile", bundle: nil)
+                    let mainSelectView = storyBoard.instantiateViewController(withIdentifier: "ProfileView") as! ProfileView
+                    self.present(mainSelectView, animated: true, completion: nil)
                 }
               })
             }
