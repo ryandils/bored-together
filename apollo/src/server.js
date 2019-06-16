@@ -5,7 +5,9 @@ import { schema as Activity, resolvers as activityResolvers } from './activity'
 const RootQuery = gql`
 	type Query {
 		user: User
-		activity: Activity
+		activeActivity: Activity
+		activity(id: ID!): Activity
+		generatedActivities: [GeneratedActivity]
 	}
 `
 
