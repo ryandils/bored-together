@@ -1,0 +1,5 @@
+query lastnamequery {
+    user {
+        lastName
+    }
+}
