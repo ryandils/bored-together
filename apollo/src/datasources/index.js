@@ -1,2 +1,2 @@
-export * from './flask'
+export * from './flaskAPI'
 export * from './boredAPI'
