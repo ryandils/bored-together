@@ -53,6 +53,10 @@ const getUser = async (id) => {
 	// TODO
 }
 
+const getUsersById = async (ids) => {
+	// TODO
+}
+
 export const bigQueryAPI = {
 	createUser,
 	login,
