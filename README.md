@@ -23,11 +23,11 @@ run xcode-select --install
 
 From here clone the GitHub repository in a desired location on your computer:
 
-HTTPS
+HTTPS:
 ```
 https://github.com/RyChrome/bored-together.git
 ```
-SSH
+SSH:
 ```
 git@github.com:RyChrome/bored-together.git
 ```
