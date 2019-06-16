@@ -103,7 +103,7 @@ class PageViewController: UIPageViewController, UIPageViewControllerDelegate, UI
                   let storyBoard: UIStoryboard = UIStoryboard(name: "MainApp", bundle: nil)
                   let mainSelectView = storyBoard.instantiateViewController(withIdentifier: "MainSelectView") as! MainSelectView
                   self.present(mainSelectView, animated: true, completion: nil)
-
+                  
                 }
               })
             }
