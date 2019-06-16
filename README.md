@@ -1,6 +1,6 @@
-# Project Title
+# B(ored) Together
 
-bored-together is an app that allows random people in the same location to connect over similar interests. 
+bored-together, or B(ored) Together is an app that allows random people in the same location to connect over similar interests. 
 
 ## Getting Started
 
@@ -69,11 +69,11 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 
 ## Authors
 
-* ** Ryan Dils* - [RyChrome](https://github.com/RyChrome)
-* ** Baily Troyer* - [BailyTroyer](https://github.com/BailyTroyer)
-* ** Alexander Stone* - [awstone](https://github.com/awstone)
-* ** Dennis Fedorishin* - [denfed](https://github.com/denfed)
-* ** Ryan Thomas* - [ryanthomas30](https://github.com/ryanthomas30)
+* *Ryan Dils* - [RyChrome](https://github.com/RyChrome)
+* *Baily Troyer* - [BailyTroyer](https://github.com/BailyTroyer)
+* *Alexander Stone* - [awstone](https://github.com/awstone)
+* *Dennis Fedorishin* - [denfed](https://github.com/denfed)
+* *Ryan Thomas* - [ryanthomas30](https://github.com/ryanthomas30)
 
 ## License
 

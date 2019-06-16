@@ -7,12 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		33C3282E22B54BE600103D44 /* AirbnbCereal-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 33C3282822B54BE600103D44 /* AirbnbCereal-ExtraBold.ttf */; };
-		33C3282F22B54BE600103D44 /* AirbnbCereal-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 33C3282922B54BE600103D44 /* AirbnbCereal-Light.ttf */; };
-		33C3283022B54BE600103D44 /* AirbnbCereal-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 33C3282A22B54BE600103D44 /* AirbnbCereal-Medium.ttf */; };
-		33C3283122B54BE600103D44 /* AirbnbCereal-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 33C3282B22B54BE600103D44 /* AirbnbCereal-Black.ttf */; };
-		33C3283222B54BE600103D44 /* AirbnbCereal-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 33C3282C22B54BE600103D44 /* AirbnbCereal-Bold.ttf */; };
-		33C3283322B54BE600103D44 /* AirbnbCereal-Book.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 33C3282D22B54BE600103D44 /* AirbnbCereal-Book.ttf */; };
 		33C3283522B553E900103D44 /* GenderSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C3283422B553E900103D44 /* GenderSelectionView.swift */; };
 		55A00B114722C8BD8B7AB0E7 /* Pods_bored_together.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55DE25BBEC35CBB74CCD05F2 /* Pods_bored_together.framework */; };
 		EB2D59B522B539C80014669B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2D59B422B539C80014669B /* AppDelegate.swift */; };
@@ -20,16 +14,24 @@
 		EB2D59BA22B539C80014669B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB2D59B822B539C80014669B /* Main.storyboard */; };
 		EB2D59BC22B539CA0014669B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB2D59BB22B539CA0014669B /* Assets.xcassets */; };
 		EB2D59BF22B539CA0014669B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB2D59BD22B539CA0014669B /* LaunchScreen.storyboard */; };
+		EB2D59EA22B58DB60014669B /* MainApp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB2D59E922B58DB60014669B /* MainApp.storyboard */; };
+		EB2D59EC22B58DC50014669B /* CardSwipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2D59EB22B58DC50014669B /* CardSwipeView.swift */; };
+		EB2D59EF22B58E2A0014669B /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2D59EE22B58E2A0014669B /* PageViewController.swift */; };
+		EB2D59F122B58E400014669B /* SPageThree.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2D59F022B58E400014669B /* SPageThree.swift */; };
+		EB2D59F322B58E530014669B /* SPageTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2D59F222B58E530014669B /* SPageTwo.swift */; };
+		EB2D59F522B58E630014669B /* SPageOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2D59F422B58E630014669B /* SPageOne.swift */; };
+		EB2D59F722B58E850014669B /* location_a.json in Sources */ = {isa = PBXBuildFile; fileRef = EB2D59F622B58E850014669B /* location_a.json */; };
+		EB2D59F922B58E9A0014669B /* location_b.json in Sources */ = {isa = PBXBuildFile; fileRef = EB2D59F822B58E9A0014669B /* location_b.json */; };
+		EB2D59FB22B58EAB0014669B /* location_c.json in Sources */ = {isa = PBXBuildFile; fileRef = EB2D59FA22B58EAB0014669B /* location_c.json */; };
+		EB2D59FF22B58FA80014669B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EB2D59FE22B58FA80014669B /* GoogleService-Info.plist */; };
+		EB2D5A0522B5A34A0014669B /* ActivityHouse.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB2D5A0422B5A34A0014669B /* ActivityHouse.storyboard */; };
+		EB2D5A0722B5A3540014669B /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB2D5A0622B5A3540014669B /* Profile.storyboard */; };
+		EB2D5A0922B5A35F0014669B /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2D5A0822B5A35F0014669B /* ProfileView.swift */; };
+		EB2D5A0B22B5A3920014669B /* ActivityTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2D5A0A22B5A3920014669B /* ActivityTableView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		28CEC85C13CFE5F620428404 /* Pods-bored-together.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bored-together.debug.xcconfig"; path = "Target Support Files/Pods-bored-together/Pods-bored-together.debug.xcconfig"; sourceTree = "<group>"; };
-		33C3282822B54BE600103D44 /* AirbnbCereal-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "AirbnbCereal-ExtraBold.ttf"; path = "../../../../cereal-airbnb-font/AirbnbCereal-ExtraBold.ttf"; sourceTree = "<group>"; };
-		33C3282922B54BE600103D44 /* AirbnbCereal-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "AirbnbCereal-Light.ttf"; path = "../../../../cereal-airbnb-font/AirbnbCereal-Light.ttf"; sourceTree = "<group>"; };
-		33C3282A22B54BE600103D44 /* AirbnbCereal-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "AirbnbCereal-Medium.ttf"; path = "../../../../cereal-airbnb-font/AirbnbCereal-Medium.ttf"; sourceTree = "<group>"; };
-		33C3282B22B54BE600103D44 /* AirbnbCereal-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "AirbnbCereal-Black.ttf"; path = "../../../../cereal-airbnb-font/AirbnbCereal-Black.ttf"; sourceTree = "<group>"; };
-		33C3282C22B54BE600103D44 /* AirbnbCereal-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "AirbnbCereal-Bold.ttf"; path = "../../../../cereal-airbnb-font/AirbnbCereal-Bold.ttf"; sourceTree = "<group>"; };
-		33C3282D22B54BE600103D44 /* AirbnbCereal-Book.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "AirbnbCereal-Book.ttf"; path = "../../../../cereal-airbnb-font/AirbnbCereal-Book.ttf"; sourceTree = "<group>"; };
 		33C3283422B553E900103D44 /* GenderSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenderSelectionView.swift; sourceTree = "<group>"; };
 		38184EE1DABD9FF96C1C3334 /* Pods-bored-together.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bored-together.release.xcconfig"; path = "Target Support Files/Pods-bored-together/Pods-bored-together.release.xcconfig"; sourceTree = "<group>"; };
 		55DE25BBEC35CBB74CCD05F2 /* Pods_bored_together.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_bored_together.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -40,6 +42,20 @@
 		EB2D59BB22B539CA0014669B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EB2D59BE22B539CA0014669B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EB2D59C022B539CA0014669B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB2D59E922B58DB60014669B /* MainApp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainApp.storyboard; sourceTree = "<group>"; };
+		EB2D59EB22B58DC50014669B /* CardSwipeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSwipeView.swift; sourceTree = "<group>"; };
+		EB2D59EE22B58E2A0014669B /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
+		EB2D59F022B58E400014669B /* SPageThree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPageThree.swift; sourceTree = "<group>"; };
+		EB2D59F222B58E530014669B /* SPageTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPageTwo.swift; sourceTree = "<group>"; };
+		EB2D59F422B58E630014669B /* SPageOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPageOne.swift; sourceTree = "<group>"; };
+		EB2D59F622B58E850014669B /* location_a.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = location_a.json; sourceTree = "<group>"; };
+		EB2D59F822B58E9A0014669B /* location_b.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = location_b.json; sourceTree = "<group>"; };
+		EB2D59FA22B58EAB0014669B /* location_c.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = location_c.json; sourceTree = "<group>"; };
+		EB2D59FE22B58FA80014669B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		EB2D5A0422B5A34A0014669B /* ActivityHouse.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ActivityHouse.storyboard; sourceTree = "<group>"; };
+		EB2D5A0622B5A3540014669B /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
+		EB2D5A0822B5A35F0014669B /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		EB2D5A0A22B5A3920014669B /* ActivityTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityTableView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,12 +73,6 @@
 		33C3282722B549A500103D44 /* fonts */ = {
 			isa = PBXGroup;
 			children = (
-				33C3282B22B54BE600103D44 /* AirbnbCereal-Black.ttf */,
-				33C3282C22B54BE600103D44 /* AirbnbCereal-Bold.ttf */,
-				33C3282D22B54BE600103D44 /* AirbnbCereal-Book.ttf */,
-				33C3282822B54BE600103D44 /* AirbnbCereal-ExtraBold.ttf */,
-				33C3282922B54BE600103D44 /* AirbnbCereal-Light.ttf */,
-				33C3282A22B54BE600103D44 /* AirbnbCereal-Medium.ttf */,
 			);
 			path = fonts;
 			sourceTree = "<group>";
@@ -98,16 +108,86 @@
 		EB2D59B322B539C80014669B /* bored-together */ = {
 			isa = PBXGroup;
 			children = (
+				EB2D59FE22B58FA80014669B /* GoogleService-Info.plist */,
+				EB2D59E822B58D4C0014669B /* Main */,
+				EB2D59E722B58D2D0014669B /* Splash */,
 				33C3282722B549A500103D44 /* fonts */,
 				EB2D59B422B539C80014669B /* AppDelegate.swift */,
 				EB2D59B622B539C80014669B /* ViewController.swift */,
-				EB2D59B822B539C80014669B /* Main.storyboard */,
 				EB2D59BB22B539CA0014669B /* Assets.xcassets */,
 				EB2D59BD22B539CA0014669B /* LaunchScreen.storyboard */,
 				EB2D59C022B539CA0014669B /* Info.plist */,
-				33C3283422B553E900103D44 /* GenderSelectionView.swift */,
 			);
 			path = "bored-together";
+			sourceTree = "<group>";
+		};
+		EB2D59E722B58D2D0014669B /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				EB2D59B822B539C80014669B /* Main.storyboard */,
+				33C3283422B553E900103D44 /* GenderSelectionView.swift */,
+				EB2D59ED22B58E130014669B /* PageView */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
+		EB2D59E822B58D4C0014669B /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				EB2D59E922B58DB60014669B /* MainApp.storyboard */,
+				EB2D59EB22B58DC50014669B /* CardSwipeView.swift */,
+				EB2D5A0322B5A3330014669B /* ActivityHouse */,
+				EB2D5A0222B5A3240014669B /* Profile */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		EB2D59ED22B58E130014669B /* PageView */ = {
+			isa = PBXGroup;
+			children = (
+				EB2D59EE22B58E2A0014669B /* PageViewController.swift */,
+				EB2D59FD22B58ECC0014669B /* Pages */,
+				EB2D59FC22B58EBC0014669B /* animations */,
+			);
+			path = PageView;
+			sourceTree = "<group>";
+		};
+		EB2D59FC22B58EBC0014669B /* animations */ = {
+			isa = PBXGroup;
+			children = (
+				EB2D59F622B58E850014669B /* location_a.json */,
+				EB2D59F822B58E9A0014669B /* location_b.json */,
+				EB2D59FA22B58EAB0014669B /* location_c.json */,
+			);
+			path = animations;
+			sourceTree = "<group>";
+		};
+		EB2D59FD22B58ECC0014669B /* Pages */ = {
+			isa = PBXGroup;
+			children = (
+				EB2D59F422B58E630014669B /* SPageOne.swift */,
+				EB2D59F222B58E530014669B /* SPageTwo.swift */,
+				EB2D59F022B58E400014669B /* SPageThree.swift */,
+			);
+			path = Pages;
+			sourceTree = "<group>";
+		};
+		EB2D5A0222B5A3240014669B /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				EB2D5A0622B5A3540014669B /* Profile.storyboard */,
+				EB2D5A0822B5A35F0014669B /* ProfileView.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		EB2D5A0322B5A3330014669B /* ActivityHouse */ = {
+			isa = PBXGroup;
+			children = (
+				EB2D5A0422B5A34A0014669B /* ActivityHouse.storyboard */,
+				EB2D5A0A22B5A3920014669B /* ActivityTableView.swift */,
+			);
+			path = ActivityHouse;
 			sourceTree = "<group>";
 		};
 		ECBD5DA68ED085FC34BB5D4C /* Frameworks */ = {
@@ -178,15 +258,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				33C3282E22B54BE600103D44 /* AirbnbCereal-ExtraBold.ttf in Resources */,
-				33C3283022B54BE600103D44 /* AirbnbCereal-Medium.ttf in Resources */,
-				33C3283222B54BE600103D44 /* AirbnbCereal-Bold.ttf in Resources */,
-				33C3282F22B54BE600103D44 /* AirbnbCereal-Light.ttf in Resources */,
 				EB2D59BF22B539CA0014669B /* LaunchScreen.storyboard in Resources */,
+				EB2D59EA22B58DB60014669B /* MainApp.storyboard in Resources */,
 				EB2D59BC22B539CA0014669B /* Assets.xcassets in Resources */,
-				33C3283122B54BE600103D44 /* AirbnbCereal-Black.ttf in Resources */,
+				EB2D59FF22B58FA80014669B /* GoogleService-Info.plist in Resources */,
+				EB2D5A0522B5A34A0014669B /* ActivityHouse.storyboard in Resources */,
+				EB2D5A0722B5A3540014669B /* Profile.storyboard in Resources */,
 				EB2D59BA22B539C80014669B /* Main.storyboard in Resources */,
-				33C3283322B54BE600103D44 /* AirbnbCereal-Book.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,12 +303,32 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-bored-together/Pods-bored-together-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Apollo/Apollo.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKShareKit/FBSDKShareKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FacebookCore/FacebookCore.framework",
+				"${BUILT_PRODUCTS_DIR}/FacebookLogin/FacebookLogin.framework",
+				"${BUILT_PRODUCTS_DIR}/FacebookShare/FacebookShare.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/TinderSwipeView/TinderSwipeView.framework",
+				"${BUILT_PRODUCTS_DIR}/lottie-ios/Lottie.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Apollo.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKShareKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookLogin.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookShare.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TinderSwipeView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Lottie.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -244,9 +342,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB2D59F322B58E530014669B /* SPageTwo.swift in Sources */,
 				33C3283522B553E900103D44 /* GenderSelectionView.swift in Sources */,
+				EB2D59EF22B58E2A0014669B /* PageViewController.swift in Sources */,
+				EB2D59F922B58E9A0014669B /* location_b.json in Sources */,
+				EB2D5A0B22B5A3920014669B /* ActivityTableView.swift in Sources */,
+				EB2D5A0922B5A35F0014669B /* ProfileView.swift in Sources */,
+				EB2D59FB22B58EAB0014669B /* location_c.json in Sources */,
+				EB2D59F522B58E630014669B /* SPageOne.swift in Sources */,
 				EB2D59B722B539C80014669B /* ViewController.swift in Sources */,
+				EB2D59F122B58E400014669B /* SPageThree.swift in Sources */,
 				EB2D59B522B539C80014669B /* AppDelegate.swift in Sources */,
+				EB2D59EC22B58DC50014669B /* CardSwipeView.swift in Sources */,
+				EB2D59F722B58E850014669B /* location_a.json in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -394,7 +502,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 43PKD3926A;
 				INFOPLIST_FILE = "bored-together/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -413,7 +521,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 43PKD3926A;
 				INFOPLIST_FILE = "bored-together/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
