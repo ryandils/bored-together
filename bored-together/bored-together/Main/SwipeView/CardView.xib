@@ -80,7 +80,7 @@
                                     <state key="normal" image="info_border.png"/>
                                 </button>
                             </subviews>
-                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
                                 <constraint firstItem="bP3-5m-jS1" firstAttribute="top" secondItem="sST-Rv-jty" secondAttribute="top" constant="8" id="6LG-eb-Qor"/>
                                 <constraint firstItem="hD5-kJ-JgJ" firstAttribute="top" secondItem="bP3-5m-jS1" secondAttribute="bottom" constant="3" id="D7M-fy-vXU"/>

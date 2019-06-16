@@ -100,9 +100,11 @@ class PageViewController: UIPageViewController, UIPageViewControllerDelegate, UI
                     print("email: \(email)")
                   }
                   
-                  let storyBoard: UIStoryboard = UIStoryboard(name: "MainApp", bundle: nil)
-                  let mainSelectView = storyBoard.instantiateViewController(withIdentifier: "MainSelectView") as! MainSelectView
-                  self.present(mainSelectView, animated: true, completion: nil)
+                  self.performSegue(withIdentifier: "to_main_app", sender: self)
+                  
+                  let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+                  let genderSelectionView = storyboard.instantiateViewController(withIdentifier: "GenderSelectionView") as! GenderSelectionView
+                  self.present(genderSelectionView, animated: true, completion: nil)
 
                 }
               })

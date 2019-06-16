@@ -31,17 +31,23 @@
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DGI-MR-gfM">
-                                <rect key="frame" x="32" y="787" width="75" height="75"/>
+                                <rect key="frame" x="32" y="782" width="75" height="75"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="x.png"/>
+                                <connections>
+                                    <action selector="disLike:" destination="4dc-U4-us2" eventType="touchUpInside" id="YKD-dk-ade"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HuD-ja-K8d">
-                                <rect key="frame" x="307" y="787" width="75" height="75"/>
+                                <rect key="frame" x="307" y="782" width="75" height="75"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="heart.png"/>
+                                <connections>
+                                    <action selector="like:" destination="4dc-U4-us2" eventType="touchUpInside" id="hAo-UF-3qN"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xFe-Sc-hfL">
-                                <rect key="frame" x="159" y="766" width="96" height="96"/>
+                                <rect key="frame" x="159" y="761" width="96" height="96"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="add_activity.png"/>
                             </button>

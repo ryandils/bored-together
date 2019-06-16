@@ -46,6 +46,7 @@ class MainSelectView: UIViewController {
       // frame.height = CGFloat(556)
 //      print("---\(frame.height)")
       let customView = CardView(frame: CGRect(x: 0, y: 0, width: frame.width, height: 556))
+      customView.newContentView.backgroundColor = .white
       print("---\(customView.frame.height)")
       customView.userModel = userModel
       // customView.buttonAction.addTarget(self, action: #selector(self.customViewButtonSelected), for: UIControl.Event.touchUpInside)
@@ -108,6 +109,19 @@ class MainSelectView: UIViewController {
     attributedText.append(NSAttributedString(string: "\nnums :\( userModel.num!) (programitically)", attributes: [.foregroundColor: UIColor.white,.font:UIFont.systemFont(ofSize: 18)]))
     return attributedText
   }
+  
+  @IBAction func like(_ sender: Any) {
+    if let swipeView = swipeView{
+      swipeView.makeRightSwipeAction()
+    }
+  }
+  
+  @IBAction func disLike(_ sender: Any) {
+    if let swipeView = swipeView{
+      swipeView.makeLeftSwipeAction()
+    }
+  }
+  
 }
 
 extension MainSelectView : TinderSwipeViewDelegate{

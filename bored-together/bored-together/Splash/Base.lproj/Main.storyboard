@@ -18,40 +18,17 @@
         </array>
     </customFonts>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
-            <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="bored_together" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.0" green="0.50196078430000002" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2162" y="136"/>
-        </scene>
         <!--Page View Controller-->
         <scene sceneID="PrR-Ff-y3W">
             <objects>
-                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="yeZ-52-zct" customClass="PageViewController" customModule="bored_together" customModuleProvider="target" sceneMemberID="viewController">
+                <pageViewController storyboardIdentifier="PageViewController" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="yeZ-52-zct" customClass="PageViewController" customModule="bored_together" customModuleProvider="target" sceneMemberID="viewController">
                     <connections>
-                        <segue destination="Lky-CH-SzF" kind="show" identifier="to_main_app" id="sC4-fr-VY2"/>
+                        <segue destination="6If-lI-fKP" kind="show" identifier="to_main_app" id="tfy-F9-vLI"/>
                     </connections>
                 </pageViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9pS-JM-zDk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="803" y="-585"/>
-        </scene>
-        <!--MainApp-->
-        <scene sceneID="KkS-jv-LaW">
-            <objects>
-                <viewControllerPlaceholder storyboardIdentifier="MainApp" storyboardName="MainApp" id="Lky-CH-SzF" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="MO2-sO-giZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1575" y="-682"/>
         </scene>
         <!--sOne-->
         <scene sceneID="VyG-DQ-rzt">
@@ -68,29 +45,52 @@
             </objects>
             <point key="canvasLocation" x="2097" y="-581"/>
         </scene>
-        <!--Gender Selection View-->
+        <!--GenderSelectionView-->
         <scene sceneID="jea-Ks-aKZ">
             <objects>
-                <viewController id="6If-lI-fKP" customClass="GenderSelectionView" customModule="bored_together" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="GenderSelectionView" title="GenderSelectionView" id="6If-lI-fKP" customClass="GenderSelectionView" customModule="bored_together" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tVx-Pt-1Ml">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TJP-hW-7P8">
-                                <rect key="frame" x="0.0" y="277" width="414" height="216"/>
+                                <rect key="frame" x="0.0" y="188" width="414" height="594"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="594" id="Ijv-Rq-16C"/>
+                                </constraints>
                             </pickerView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What's your gender?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qRy-ah-kZP">
-                                <rect key="frame" x="104.5" y="244" width="205" height="26"/>
-                                <fontDescription key="fontDescription" name="AirbnbCerealApp-Light" family="Airbnb Cereal App" pointSize="22"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What's your gender?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qRy-ah-kZP">
+                                <rect key="frame" x="93" y="151" width="228" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="29" id="D14-Nj-yM5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AirbnbCerealApp-Book" family="Airbnb Cereal App" pointSize="24"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xkz-pb-Ovf">
+                                <rect key="frame" x="20" y="44" width="48" height="48"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" image="back"/>
+                                <connections>
+                                    <action selector="back:" destination="6If-lI-fKP" eventType="touchUpInside" id="Zm3-5s-vZV"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wam-sN-Ane">
-                                <rect key="frame" x="159" y="793" width="109" height="39"/>
+                                <rect key="frame" x="72" y="790" width="270" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="270" id="A0A-n4-5RM"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="AirbnbCerealApp-Book" family="Airbnb Cereal App" pointSize="23"/>
                                 <state key="normal" title="Continue">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleColor" red="0.0" green="0.50196078430000002" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="GenderNextSlide:" destination="6If-lI-fKP" eventType="touchUpInside" id="jgb-ad-kJg"/>
                                 </connections>
@@ -98,14 +98,17 @@
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.50196078431372548" blue="0.99607843137254903" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="TJP-hW-7P8" secondAttribute="trailing" id="106-qS-IxL"/>
-                            <constraint firstItem="TJP-hW-7P8" firstAttribute="leading" secondItem="tVx-Pt-1Ml" secondAttribute="leading" id="6ih-2s-4QD"/>
-                            <constraint firstItem="qRy-ah-kZP" firstAttribute="centerX" secondItem="TJP-hW-7P8" secondAttribute="centerX" id="Blk-St-39z"/>
-                            <constraint firstItem="qRy-ah-kZP" firstAttribute="top" secondItem="Jq2-vC-T7U" secondAttribute="top" constant="200" id="NNH-ac-hgL"/>
-                            <constraint firstItem="Jq2-vC-T7U" firstAttribute="bottom" secondItem="wam-sN-Ane" secondAttribute="bottom" constant="30" id="Qo7-Jk-01E"/>
-                            <constraint firstItem="Jq2-vC-T7U" firstAttribute="trailing" secondItem="wam-sN-Ane" secondAttribute="trailing" constant="146" id="SeE-Wm-f2r"/>
-                            <constraint firstItem="TJP-hW-7P8" firstAttribute="top" secondItem="qRy-ah-kZP" secondAttribute="bottom" constant="7" id="ry9-OG-pNU"/>
-                            <constraint firstItem="wam-sN-Ane" firstAttribute="leading" secondItem="Jq2-vC-T7U" secondAttribute="leading" constant="159" id="z62-8H-tcl"/>
+                            <constraint firstAttribute="trailing" secondItem="TJP-hW-7P8" secondAttribute="trailing" id="2PQ-TN-1Nk"/>
+                            <constraint firstItem="TJP-hW-7P8" firstAttribute="centerX" secondItem="qRy-ah-kZP" secondAttribute="centerX" id="3FK-e6-4IK"/>
+                            <constraint firstItem="Xkz-pb-Ovf" firstAttribute="leading" secondItem="Jq2-vC-T7U" secondAttribute="leading" constant="20" id="DaL-uJ-GpG"/>
+                            <constraint firstItem="TJP-hW-7P8" firstAttribute="leading" secondItem="tVx-Pt-1Ml" secondAttribute="leading" id="HJc-JE-13p"/>
+                            <constraint firstItem="qRy-ah-kZP" firstAttribute="top" secondItem="Jq2-vC-T7U" secondAttribute="top" constant="107" id="MUD-3k-v36"/>
+                            <constraint firstItem="TJP-hW-7P8" firstAttribute="top" secondItem="qRy-ah-kZP" secondAttribute="bottom" constant="8" id="QaQ-Xs-s5s"/>
+                            <constraint firstItem="Jq2-vC-T7U" firstAttribute="bottom" secondItem="wam-sN-Ane" secondAttribute="bottom" constant="22" id="Qo7-Jk-01E"/>
+                            <constraint firstItem="wam-sN-Ane" firstAttribute="top" secondItem="TJP-hW-7P8" secondAttribute="bottom" constant="8" symbolic="YES" id="Sz6-T2-fkE"/>
+                            <constraint firstItem="Xkz-pb-Ovf" firstAttribute="top" secondItem="Jq2-vC-T7U" secondAttribute="top" id="kkM-up-AUR"/>
+                            <constraint firstItem="wam-sN-Ane" firstAttribute="centerX" secondItem="TJP-hW-7P8" secondAttribute="centerX" id="qae-Kl-eO2"/>
+                            <constraint firstItem="wam-sN-Ane" firstAttribute="centerX" secondItem="Jq2-vC-T7U" secondAttribute="centerX" id="vVK-2C-mqU"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Jq2-vC-T7U"/>
                     </view>
@@ -116,24 +119,24 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vQH-nv-poC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="757.97101449275374" y="135.9375"/>
+            <point key="canvasLocation" x="763.768115942029" y="135.9375"/>
         </scene>
-        <!--View Controller-->
+        <!--Age Selection View-->
         <scene sceneID="a4H-q9-PpL">
             <objects>
-                <viewController id="hqc-z0-W2X" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AgeSelectionView" id="hqc-z0-W2X" customClass="AgeSelectionView" customModule="bored_together" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eOI-51-XpI">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What's your age?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JoH-SI-6BD">
-                                <rect key="frame" x="110" y="244" width="194" height="26"/>
+                                <rect key="frame" x="110" y="151" width="194" height="29"/>
                                 <fontDescription key="fontDescription" name="AirbnbCerealApp-Light" family="Airbnb Cereal App" pointSize="22"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Your age" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6eO-sh-wRq">
-                                <rect key="frame" x="150" y="309" width="114" height="30"/>
+                                <rect key="frame" x="150" y="312" width="114" height="30"/>
                                 <color key="backgroundColor" red="0.0" green="0.50196078430000002" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="4ey-SH-y97"/>
@@ -142,36 +145,43 @@
                                 <fontDescription key="fontDescription" name="AirbnbCerealApp-Book" family="Airbnb Cereal App" pointSize="22"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gmj-Ni-hyL">
-                                <rect key="frame" x="149" y="793" width="116" height="39"/>
-                                <fontDescription key="fontDescription" name="AirbnbCerealApp-Book" family="Airbnb Cereal App" pointSize="23"/>
-                                <state key="normal" title="Continue">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Age before beauty 😉" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H2t-Ri-2dY">
+                                <rect key="frame" x="117" y="188" width="180" height="23.5"/>
+                                <fontDescription key="fontDescription" name="AirbnbCerealApp-Light" family="Airbnb Cereal App" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LJy-cV-vba">
+                                <rect key="frame" x="20" y="44" width="48" height="48"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" image="back"/>
                                 <connections>
-                                    <action selector="GenderNextSlide:" destination="6If-lI-fKP" eventType="touchUpInside" id="fok-Rr-mhM"/>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="FVs-DA-rBZ"/>
+                                    <action selector="back:" destination="hqc-z0-W2X" eventType="touchUpInside" id="3ym-XS-jRu"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.50196078430000002" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="6eO-sh-wRq" firstAttribute="top" secondItem="JoH-SI-6BD" secondAttribute="bottom" constant="39" id="01e-il-DKC"/>
-                            <constraint firstItem="JoH-SI-6BD" firstAttribute="leading" secondItem="llK-5V-xvK" secondAttribute="leading" constant="110" id="66s-7S-A4U"/>
+                            <constraint firstItem="JoH-SI-6BD" firstAttribute="top" secondItem="llK-5V-xvK" secondAttribute="top" constant="107" id="ApQ-i7-Fwh"/>
+                            <constraint firstItem="LJy-cV-vba" firstAttribute="leading" secondItem="llK-5V-xvK" secondAttribute="leading" constant="20" id="Au4-PE-1ec"/>
                             <constraint firstItem="JoH-SI-6BD" firstAttribute="centerX" secondItem="6eO-sh-wRq" secondAttribute="centerX" id="BAV-1g-c54"/>
-                            <constraint firstItem="llK-5V-xvK" firstAttribute="bottom" secondItem="gmj-Ni-hyL" secondAttribute="bottom" constant="30" id="af3-qz-xmI"/>
+                            <constraint firstItem="LJy-cV-vba" firstAttribute="top" secondItem="llK-5V-xvK" secondAttribute="top" id="GXJ-VU-aSd"/>
+                            <constraint firstItem="JoH-SI-6BD" firstAttribute="leading" secondItem="llK-5V-xvK" secondAttribute="leading" constant="110" id="Grr-Fw-3JH"/>
+                            <constraint firstItem="H2t-Ri-2dY" firstAttribute="top" secondItem="JoH-SI-6BD" secondAttribute="bottom" constant="8" symbolic="YES" id="LMP-r2-CA3"/>
+                            <constraint firstItem="6eO-sh-wRq" firstAttribute="top" secondItem="eOI-51-XpI" secondAttribute="top" constant="312" id="OaJ-mI-DZG"/>
+                            <constraint firstItem="JoH-SI-6BD" firstAttribute="centerX" secondItem="H2t-Ri-2dY" secondAttribute="centerX" id="eKY-cD-K2C"/>
                             <constraint firstItem="JoH-SI-6BD" firstAttribute="centerX" secondItem="eOI-51-XpI" secondAttribute="centerX" id="eOd-en-AVd"/>
-                            <constraint firstItem="JoH-SI-6BD" firstAttribute="top" secondItem="llK-5V-xvK" secondAttribute="top" constant="200" id="fQ8-AN-04M"/>
-                            <constraint firstItem="gmj-Ni-hyL" firstAttribute="leading" secondItem="llK-5V-xvK" secondAttribute="leading" constant="149" id="jPm-VC-FXj"/>
                             <constraint firstItem="6eO-sh-wRq" firstAttribute="leading" secondItem="llK-5V-xvK" secondAttribute="leading" constant="150" id="nPU-3r-V3d"/>
-                            <constraint firstItem="6eO-sh-wRq" firstAttribute="centerX" secondItem="gmj-Ni-hyL" secondAttribute="centerX" id="nbS-c5-VRi"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="llK-5V-xvK"/>
                     </view>
+                    <connections>
+                        <outlet property="age" destination="6eO-sh-wRq" id="5K9-QP-qv6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sdm-BT-cQ7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1446.376811594203" y="135.9375"/>
+            <point key="canvasLocation" x="1490" y="136"/>
         </scene>
         <!--sTwo-->
         <scene sceneID="oZ6-eM-8qC">
@@ -204,4 +214,7 @@
             <point key="canvasLocation" x="3481" y="-581"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="back" width="48" height="48"/>
+    </resources>
 </document>

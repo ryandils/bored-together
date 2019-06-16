@@ -12,6 +12,7 @@
 		EB0FD32E22B5C79400BC3C8E /* add_activity.png in Resources */ = {isa = PBXBuildFile; fileRef = EB0FD32D22B5C79300BC3C8E /* add_activity.png */; };
 		EB0FD33022B5CA2D00BC3C8E /* backpacking.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EB0FD32F22B5CA2D00BC3C8E /* backpacking.jpg */; };
 		EB0FD33822B5CC3800BC3C8E /* info_border.png in Resources */ = {isa = PBXBuildFile; fileRef = EB0FD33722B5CC3700BC3C8E /* info_border.png */; };
+		EB0FD33A22B5E8C400BC3C8E /* AgeSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0FD33922B5E8C400BC3C8E /* AgeSelectionView.swift */; };
 		EB2D59B522B539C80014669B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2D59B422B539C80014669B /* AppDelegate.swift */; };
 		EB2D59B722B539C80014669B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2D59B622B539C80014669B /* ViewController.swift */; };
 		EB2D59BA22B539C80014669B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB2D59B822B539C80014669B /* Main.storyboard */; };
@@ -53,6 +54,7 @@
 		EB0FD33522B5CACC00BC3C8E /* AirbnbCereal-Book.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AirbnbCereal-Book.ttf"; sourceTree = "<group>"; };
 		EB0FD33622B5CACC00BC3C8E /* AirbnbCereal-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AirbnbCereal-ExtraBold.ttf"; sourceTree = "<group>"; };
 		EB0FD33722B5CC3700BC3C8E /* info_border.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = info_border.png; sourceTree = "<group>"; };
+		EB0FD33922B5E8C400BC3C8E /* AgeSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgeSelectionView.swift; sourceTree = "<group>"; };
 		EB2D59B122B539C80014669B /* bored-together.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "bored-together.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB2D59B422B539C80014669B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EB2D59B622B539C80014669B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -165,6 +167,7 @@
 			children = (
 				EB2D59B822B539C80014669B /* Main.storyboard */,
 				33C3283422B553E900103D44 /* GenderSelectionView.swift */,
+				EB0FD33922B5E8C400BC3C8E /* AgeSelectionView.swift */,
 				EB2D59ED22B58E130014669B /* PageView */,
 			);
 			path = Splash;
@@ -411,6 +414,7 @@
 				EB2D5A1122B5ABC40014669B /* MainSelectView.swift in Sources */,
 				EB2D5A1622B5AFE90014669B /* CardView.swift in Sources */,
 				EB2D59F722B58E850014669B /* location_a.json in Sources */,
+				EB0FD33A22B5E8C400BC3C8E /* AgeSelectionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
