@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import Apollo
 
 internal struct activity {
     internal var title: String;
@@ -50,6 +51,14 @@ class ActivityTableView: UIViewController, UITableViewDelegate, UITableViewDataS
 //        cell.imageView?.image = test_activitylist[indexPath.row].image
         
 //        cell.contentView.backgroundColor = UIColor(white: 0.95, alpha: 1)
+        let query = LastnamequeryQuery()
+        apollo.fetch(query: query) { results, error in
+            print(results?.data.unsafelyUnwrapped)
+            print(error)
+        }
+        
+        
+        
         
         return cell
     }
