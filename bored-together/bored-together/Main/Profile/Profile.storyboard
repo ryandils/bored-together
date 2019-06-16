@@ -9,6 +9,14 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="AirbnbCereal-Book.ttf">
+            <string>AirbnbCerealApp-Book</string>
+        </array>
+        <array key="AirbnbCereal-Medium.ttf">
+            <string>AirbnbCerealApp-Medium</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--ProfileView-->
         <scene sceneID="Zr9-ad-S0l">
@@ -18,42 +26,100 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ryan Dils" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Oh-LO-o9y">
-                                <rect key="frame" x="107" y="491" width="200" height="58"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="44"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="phD-wu-cfI">
-                                <rect key="frame" x="168" y="557" width="78" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Buffalo, NY">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="changeLocationWithSender:" destination="80p-yu-8kr" eventType="touchUpInside" id="zQi-b4-EaP"/>
-                                </connections>
-                            </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Idh-lu-ma6">
-                                <rect key="frame" x="107" y="222" width="200" height="200"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lwo-l0-1hw">
-                                <rect key="frame" x="271" y="399" width="36" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" image="camera-1">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                </state>
-                                <connections>
-                                    <action selector="changeImageWithSender:" destination="80p-yu-8kr" eventType="touchUpInside" id="o0a-JM-LgP"/>
-                                </connections>
-                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZWx-zQ-Vrt">
+                                <rect key="frame" x="-216" y="-103" width="846" height="747"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="prof_pic.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Idh-lu-ma6">
+                                        <rect key="frame" x="298" y="222" width="250" height="250"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="250" id="Poo-cD-XfH"/>
+                                            <constraint firstAttribute="width" constant="250" id="wmY-Zn-HIL"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="125"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Baily Troyer, 21" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Oh-LO-o9y">
+                                        <rect key="frame" x="301" y="480" width="244" height="58"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="58" id="2nP-kr-A7w"/>
+                                            <constraint firstAttribute="width" constant="244" id="MOd-v5-j3f"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AirbnbCerealApp-Medium" family="Airbnb Cereal App" pointSize="26"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xuh-Bw-K4x">
+                                        <rect key="frame" x="513" y="439" width="50" height="50"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lwo-l0-1hw">
+                                                <rect key="frame" x="5" y="5" width="40" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="40" id="5qV-fD-bbm"/>
+                                                    <constraint firstAttribute="height" constant="40" id="mQV-Fw-2hz"/>
+                                                </constraints>
+                                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" image="camera-1">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="changeImageWithSender:" destination="80p-yu-8kr" eventType="touchUpInside" id="o0a-JM-LgP"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="Lwo-l0-1hw" firstAttribute="leading" secondItem="xuh-Bw-K4x" secondAttribute="leading" constant="5" id="0ve-xf-vKb"/>
+                                            <constraint firstAttribute="bottom" secondItem="Lwo-l0-1hw" secondAttribute="bottom" constant="5" id="NRW-Sn-3Nv"/>
+                                            <constraint firstAttribute="trailing" secondItem="Lwo-l0-1hw" secondAttribute="trailing" constant="5" id="bpW-Tg-d8Q"/>
+                                            <constraint firstItem="Lwo-l0-1hw" firstAttribute="top" secondItem="xuh-Bw-K4x" secondAttribute="top" constant="5" id="zeL-sv-egd"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="25"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="phD-wu-cfI">
+                                        <rect key="frame" x="347" y="528" width="152" height="36"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="152" id="INz-eD-Pgm"/>
+                                            <constraint firstAttribute="height" constant="36" id="yRK-wI-1oZ"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AirbnbCerealApp-Book" family="Airbnb Cereal App" pointSize="18"/>
+                                        <state key="normal" title="Buffalo, NY">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.50196078430000002" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="Idh-lu-ma6" firstAttribute="centerX" secondItem="5Oh-LO-o9y" secondAttribute="centerX" id="9De-MT-7jZ"/>
+                                    <constraint firstItem="Idh-lu-ma6" firstAttribute="centerX" secondItem="ZWx-zQ-Vrt" secondAttribute="centerX" id="DWp-rM-2bc"/>
+                                    <constraint firstItem="xuh-Bw-K4x" firstAttribute="top" secondItem="Idh-lu-ma6" secondAttribute="bottom" constant="-33" id="SQk-XZ-9Rp"/>
+                                    <constraint firstItem="phD-wu-cfI" firstAttribute="centerX" secondItem="5Oh-LO-o9y" secondAttribute="centerX" id="TZZ-L9-jAZ"/>
+                                    <constraint firstItem="phD-wu-cfI" firstAttribute="top" secondItem="Idh-lu-ma6" secondAttribute="bottom" constant="56" id="doR-0v-3kU"/>
+                                    <constraint firstItem="5Oh-LO-o9y" firstAttribute="top" secondItem="Idh-lu-ma6" secondAttribute="bottom" constant="8" symbolic="YES" id="gzW-KE-YpF"/>
+                                    <constraint firstItem="Idh-lu-ma6" firstAttribute="top" secondItem="ZWx-zQ-Vrt" secondAttribute="top" constant="222" id="oe2-r8-Htu"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="407"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
                         </subviews>
-                        <color key="backgroundColor" red="0.0" green="0.50196078430000002" blue="0.99607843139999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ZWx-zQ-Vrt" firstAttribute="leading" secondItem="LvC-nC-ClO" secondAttribute="leading" constant="-216" id="9PD-rX-Ga0"/>
+                            <constraint firstItem="ZWx-zQ-Vrt" firstAttribute="top" secondItem="LvC-nC-ClO" secondAttribute="top" constant="-103" id="9fk-8K-e9j"/>
+                            <constraint firstItem="yKO-QB-U8X" firstAttribute="bottom" secondItem="ZWx-zQ-Vrt" secondAttribute="bottom" constant="169" id="EVD-bO-dLe"/>
+                            <constraint firstItem="ZWx-zQ-Vrt" firstAttribute="centerX" secondItem="LvC-nC-ClO" secondAttribute="centerX" id="HFu-cU-kGi"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="yKO-QB-U8X"/>
                     </view>
                     <toolbarItems/>
@@ -65,19 +131,29 @@
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="changeImageButton" destination="Lwo-l0-1hw" id="P2u-sA-5AH"/>
                         <outlet property="changeLocationButton" destination="phD-wu-cfI" id="pxD-Fx-DOd"/>
+                        <outlet property="circleView" destination="ZWx-zQ-Vrt" id="zsL-XF-MtD"/>
                         <outlet property="profileImage" destination="Idh-lu-ma6" id="jPF-Ot-uf9"/>
+                        <segue destination="dbA-b3-pra" kind="show" identifier="back_to" customClass="SegueFromRight" customModule="bored_together" customModuleProvider="target" id="ymd-bH-M6n"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aR1-DE-8Bv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="881.15942028985512" y="-239.0625"/>
         </scene>
+        <!--MainApp-->
+        <scene sceneID="YNx-HJ-koX">
+            <objects>
+                <viewControllerPlaceholder storyboardName="MainApp" id="dbA-b3-pra" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="F41-PD-nm3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1640" y="-339"/>
+        </scene>
     </scenes>
     <resources>
         <image name="camera-1" width="36" height="36"/>
         <image name="left" width="36" height="36"/>
+        <image name="prof_pic.jpg" width="3220" height="3220"/>
         <image name="settings" width="24" height="24"/>
     </resources>
 </document>

@@ -16,32 +16,46 @@ struct Setting {
 class ProfileView: UIViewController, UIImagePickerControllerDelegate, UITableViewDelegate, UINavigationControllerDelegate {
     
     var imagePicker = UIImagePickerController()
-    
-    @IBOutlet weak var changeImageButton: UIButton!
+  
     @IBOutlet weak var changeLocationButton: UIButton!
     @IBOutlet weak var profileImage: UIImageView!
     @IBOutlet weak var fullName: UILabel!
     @IBOutlet weak var hometown: UILabel!
+  @IBOutlet weak var circleView: UIView!
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    profileImage.image = #imageLiteral(resourceName: "profile")
-    profileImage.layer.masksToBounds = false
-    profileImage.layer.borderColor = UIColor.black.cgColor
-    profileImage.layer.cornerRadius = profileImage.frame.height/2
-    profileImage.clipsToBounds = true
+//    profileImage.layer.masksToBounds = false
+//    profileImage.layer.borderColor = UIColor.black.cgColor
+//    profileImage.layer.cornerRadius = profileImage.frame.height/2
+//    profileImage.clipsToBounds = true
     
     imagePicker.delegate = self
     
     messages = []
+    
+    let swipeLeft = UISwipeGestureRecognizer(target: self, action: #selector(self.respondToSwipeGesture))
+    swipeLeft.direction = UISwipeGestureRecognizer.Direction.left
+    self.view.addGestureRecognizer(swipeLeft)
   }
+  
+    @objc func respondToSwipeGesture(gesture: UIGestureRecognizer) {
+      if let swipeGesture = gesture as? UISwipeGestureRecognizer {
+        switch swipeGesture.direction {
+        case UISwipeGestureRecognizer.Direction.left:
+          // go back
+          print("going back")
+          self.performSegue(withIdentifier: "back_to", sender: self)
+        default:
+          break
+        }
+      }
+    }
     
     var messages:[String]!
     
     @IBAction func changeImage(sender: Any) {
-        self.changeImageButton.setTitleColor(UIColor.white, for: .normal)
-        self.changeImageButton.isUserInteractionEnabled = true
-        
+      
         let alert = UIAlertController(title: "Choose Image", message: nil, preferredStyle: .actionSheet)
         alert.addAction(UIAlertAction(title: "Camera", style: .default, handler: { _ in
             self.openCamera()

@@ -3,11 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		03D44D40BAA1956E99D4F0F7 /* Pods_bored_together.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3136664A8B48B7461E59B94B /* Pods_bored_together.framework */; };
+		04249C95E935F46D45E1BECD /* Pods_bored_together.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 093FDFEE88EA4FF0942410FF /* Pods_bored_together.framework */; };
 		330876BF22B60A8700F9F67F /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 330876BE22B60A8700F9F67F /* API.swift */; };
 		330876C122B60CE400F9F67F /* schema.json in Resources */ = {isa = PBXBuildFile; fileRef = 330876C022B60CE400F9F67F /* schema.json */; };
 		330876C422B60E8A00F9F67F /* RegisterViewController.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 330876C322B60E8A00F9F67F /* RegisterViewController.graphql */; };
@@ -52,12 +52,11 @@
 		EB2D5A1622B5AFE90014669B /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2D5A1522B5AFE90014669B /* CardView.swift */; };
 		EB2D5A1C22B5C6540014669B /* x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB2D5A1B22B5C6530014669B /* x.png */; };
 		EB2D5A1E22B5C6590014669B /* heart.png in Resources */ = {isa = PBXBuildFile; fileRef = EB2D5A1D22B5C6590014669B /* heart.png */; };
+		EB84769522B646DF00668E6F /* prof_pic.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EB84769422B646DE00668E6F /* prof_pic.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0DA484F655B57A260A5D1644 /* Pods-bored-together.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bored-together.release.xcconfig"; path = "Target Support Files/Pods-bored-together/Pods-bored-together.release.xcconfig"; sourceTree = "<group>"; };
-		244D32F7222F1B6CC7F43844 /* Pods-bored-together.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bored-together.debug.xcconfig"; path = "Target Support Files/Pods-bored-together/Pods-bored-together.debug.xcconfig"; sourceTree = "<group>"; };
-		3136664A8B48B7461E59B94B /* Pods_bored_together.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_bored_together.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		093FDFEE88EA4FF0942410FF /* Pods_bored_together.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_bored_together.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		330876BE22B60A8700F9F67F /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		330876C022B60CE400F9F67F /* schema.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = schema.json; sourceTree = "<group>"; };
 		330876C322B60E8A00F9F67F /* RegisterViewController.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = RegisterViewController.graphql; sourceTree = "<group>"; };
@@ -72,6 +71,8 @@
 		33DA1EC122B5DFE6004D28BD /* AirbnbCereal-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AirbnbCereal-Bold.ttf"; sourceTree = "<group>"; };
 		33DA1EC222B5DFE6004D28BD /* AirbnbCereal-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AirbnbCereal-ExtraBold.ttf"; sourceTree = "<group>"; };
 		33DA1EC322B5DFE6004D28BD /* AirbnbCereal-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AirbnbCereal-Light.ttf"; sourceTree = "<group>"; };
+		537E5ECE2B20E68000389800 /* Pods-bored-together.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bored-together.debug.xcconfig"; path = "Target Support Files/Pods-bored-together/Pods-bored-together.debug.xcconfig"; sourceTree = "<group>"; };
+		D115D6CD4A0B7BB0CC154298 /* Pods-bored-together.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bored-together.release.xcconfig"; path = "Target Support Files/Pods-bored-together/Pods-bored-together.release.xcconfig"; sourceTree = "<group>"; };
 		EB0FD32D22B5C79300BC3C8E /* add_activity.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = add_activity.png; sourceTree = "<group>"; };
 		EB0FD32F22B5CA2D00BC3C8E /* backpacking.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = backpacking.jpg; sourceTree = "<group>"; };
 		EB0FD33122B5CACC00BC3C8E /* AirbnbCereal-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "AirbnbCereal-Black.ttf"; path = "bored-together/fonts/AirbnbCereal-Black.ttf"; sourceTree = SOURCE_ROOT; };
@@ -110,6 +111,7 @@
 		EB2D5A1522B5AFE90014669B /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		EB2D5A1B22B5C6530014669B /* x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = x.png; sourceTree = "<group>"; };
 		EB2D5A1D22B5C6590014669B /* heart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = heart.png; sourceTree = "<group>"; };
+		EB84769422B646DE00668E6F /* prof_pic.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = prof_pic.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,21 +119,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				03D44D40BAA1956E99D4F0F7 /* Pods_bored_together.framework in Frameworks */,
+				04249C95E935F46D45E1BECD /* Pods_bored_together.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		26FE3D2C3DF30427C711A237 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				3136664A8B48B7461E59B94B /* Pods_bored_together.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		330876C222B60E6500F9F67F /* GraphQL */ = {
 			isa = PBXGroup;
 			children = (
@@ -171,8 +165,8 @@
 		9275F098695C673BFB36D3B8 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				244D32F7222F1B6CC7F43844 /* Pods-bored-together.debug.xcconfig */,
-				0DA484F655B57A260A5D1644 /* Pods-bored-together.release.xcconfig */,
+				537E5ECE2B20E68000389800 /* Pods-bored-together.debug.xcconfig */,
+				D115D6CD4A0B7BB0CC154298 /* Pods-bored-together.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -183,7 +177,7 @@
 				EB2D59B322B539C80014669B /* bored-together */,
 				EB2D59B222B539C80014669B /* Products */,
 				9275F098695C673BFB36D3B8 /* Pods */,
-				26FE3D2C3DF30427C711A237 /* Frameworks */,
+				F0EA624C4484648ED4AF6BF3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -265,6 +259,7 @@
 		EB2D5A0222B5A3240014669B /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				EB84769422B646DE00668E6F /* prof_pic.jpg */,
 				EB2D5A0622B5A3540014669B /* Profile.storyboard */,
 				EB2D5A0822B5A35F0014669B /* ProfileView.swift */,
 			);
@@ -298,6 +293,14 @@
 			path = SwipeView;
 			sourceTree = "<group>";
 		};
+		F0EA624C4484648ED4AF6BF3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				093FDFEE88EA4FF0942410FF /* Pods_bored_together.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -305,12 +308,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EB2D59C322B539CA0014669B /* Build configuration list for PBXNativeTarget "bored-together" */;
 			buildPhases = (
-				8D779EEE6A140DAF641BFFFA /* [CP] Check Pods Manifest.lock */,
+				94B8D69926DC150A50CFC101 /* [CP] Check Pods Manifest.lock */,
 				EB2D59AD22B539C80014669B /* Sources */,
 				EB2D59AE22B539C80014669B /* Frameworks */,
 				EB2D59AF22B539C80014669B /* Resources */,
-				31424468FAAFAF01D9D89B60 /* [CP] Embed Pods Frameworks */,
 				330876BC22B605A000F9F67F /* ShellScript */,
+				BA9C3029CD0013F6A60EDD4B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -364,6 +367,7 @@
 				EB0FD33C22B5F7BC00BC3C8E /* AirbnbCereal-Light.ttf in Resources */,
 				EB2D59EA22B58DB60014669B /* MainApp.storyboard in Resources */,
 				EB0FD33B22B5F7BA00BC3C8E /* AirbnbCereal-Medium.ttf in Resources */,
+				EB84769522B646DF00668E6F /* prof_pic.jpg in Resources */,
 				EB2D59BC22B539CA0014669B /* Assets.xcassets in Resources */,
 				EB2D59FF22B58FA80014669B /* GoogleService-Info.plist in Resources */,
 				330876C422B60E8A00F9F67F /* RegisterViewController.graphql in Resources */,
@@ -389,23 +393,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		31424468FAAFAF01D9D89B60 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-bored-together/Pods-bored-together-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-bored-together/Pods-bored-together-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-bored-together/Pods-bored-together-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		330876BC22B605A000F9F67F /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -424,7 +411,7 @@
 			shellScript = "APOLLO_FRAMEWORK_PATH=\"$(eval find $FRAMEWORK_SEARCH_PATHS -name \"Apollo.framework\" -maxdepth 1)\"\n\nif [ -z \"$APOLLO_FRAMEWORK_PATH\" ]; then\necho \"error: Couldn't find Apollo.framework in FRAMEWORK_SEARCH_PATHS; make sure to add the framework to your project.\"\nexit 1\nfi\n\ncd \"${SRCROOT}/${TARGET_NAME}\"\n$APOLLO_FRAMEWORK_PATH/check-and-run-apollo-cli.sh codegen:generate --queries=\"$(find . -name '*.graphql')\" --schema=schema.json API.swift\n";
 			showEnvVarsInLog = 0;
 		};
-		8D779EEE6A140DAF641BFFFA /* [CP] Check Pods Manifest.lock */ = {
+		94B8D69926DC150A50CFC101 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -444,6 +431,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BA9C3029CD0013F6A60EDD4B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-bored-together/Pods-bored-together-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Apollo/Apollo.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKShareKit/FBSDKShareKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FacebookCore/FacebookCore.framework",
+				"${BUILT_PRODUCTS_DIR}/FacebookLogin/FacebookLogin.framework",
+				"${BUILT_PRODUCTS_DIR}/FacebookShare/FacebookShare.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/TinderSwipeView/TinderSwipeView.framework",
+				"${BUILT_PRODUCTS_DIR}/lottie-ios/Lottie.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Apollo.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKShareKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookLogin.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookShare.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TinderSwipeView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Lottie.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-bored-together/Pods-bored-together-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -616,7 +645,7 @@
 		};
 		EB2D59C422B539CA0014669B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 244D32F7222F1B6CC7F43844 /* Pods-bored-together.debug.xcconfig */;
+			baseConfigurationReference = 537E5ECE2B20E68000389800 /* Pods-bored-together.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -635,7 +664,7 @@
 		};
 		EB2D59C522B539CA0014669B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0DA484F655B57A260A5D1644 /* Pods-bored-together.release.xcconfig */;
+			baseConfigurationReference = D115D6CD4A0B7BB0CC154298 /* Pods-bored-together.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

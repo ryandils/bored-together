@@ -16,6 +16,13 @@ struct UserModel {
   let num : String!
 }
 
+struct thing {
+  var img: UIImage
+  var activity: String
+  var place: String
+  var people: String
+}
+
 let names = ["Adam Gontier","Matt Walst","Brad Walst","Neil Sanderson","Barry Stock","Nicky Patson"]
 
 class MainSelectView: UIViewController {

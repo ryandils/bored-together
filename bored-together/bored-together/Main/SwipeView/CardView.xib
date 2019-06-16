@@ -23,9 +23,13 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CardView" customModule="bored_together" customModuleProvider="target">
             <connections>
+                <outlet property="actImage" destination="NZw-C3-eU3" id="NYm-Pr-mJI"/>
+                <outlet property="activity" destination="bP3-5m-jS1" id="Jbc-8Q-O5w"/>
                 <outlet property="contentView" destination="iN0-l3-epB" id="gjj-id-LPy"/>
                 <outlet property="newContainerView" destination="sST-Rv-jty" id="fWG-Zu-49O"/>
                 <outlet property="newContentView" destination="45o-Zy-MoZ" id="Ec2-vN-bfr"/>
+                <outlet property="pG" destination="NJw-CI-aA6" id="2WA-rJ-YEG"/>
+                <outlet property="place" destination="hD5-kJ-JgJ" id="4Yd-h3-RIU"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -46,7 +50,7 @@
                             <rect key="frame" x="0.0" y="446" width="414" height="110"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Backpacking " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bP3-5m-jS1">
-                                    <rect key="frame" x="8" y="8" width="183" height="40"/>
+                                    <rect key="frame" x="8" y="8" width="195" height="40"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="40" id="JOm-hC-UC6"/>
                                     </constraints>
@@ -55,7 +59,7 @@
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="45 people going" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NJw-CI-aA6">
-                                    <rect key="frame" x="8" y="76" width="123" height="23"/>
+                                    <rect key="frame" x="8" y="76" width="126" height="23"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="23" id="ggH-ZE-txa"/>
                                     </constraints>
@@ -64,7 +68,7 @@
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Buffalo, NY" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hD5-kJ-JgJ">
-                                    <rect key="frame" x="8" y="51" width="86.5" height="23"/>
+                                    <rect key="frame" x="8" y="51" width="87.5" height="23"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="23" id="Xot-sK-c5k"/>
                                     </constraints>
