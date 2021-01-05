@@ -18,7 +18,7 @@
 		"@babel/register": "^7.0.0",
 		"apollo-datasource-rest": "^0.5.0",
 		"apollo-server": "^2.6.3",
-		"axios": "^0.19.0",
+		"axios": "^0.21.1",
 		"casual": "^1.6.2",
 		"eslint": "^5.16.0",
 		"graphql": "^14.3.1",
